@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ZP.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="bgf7">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox cf">
+				@@include("../src/myAccountLeftNav.html") 
+				<div class="rightContent">
+					<div class="atitle cf">
+						<div class="atitle-text">安全中心</div>
+					</div>
+					<div class="scStep">
+						<span>账户安全等级 :  中</span>
+						<img src="images/account/zpbanner1.png" />
+					</div>
+					<ul class="scList">
+						<li>
+							<span class="wd1">上次登录时间</span>
+							<span class="wd2">2017-05-16  19:51:46</span>
+						</li>
+						<li>
+							<span class="wd1">登录密码</span>
+							<span class="wd2">登入汇票之家时输入的密码</span>
+							<span class="wd3 done">已设置</span>
+							<a href="#" class="wd4">修改</a>
+						</li>
+						<li>
+							<span class="wd1">交易密码</span>
+							<span class="wd2">为了保证您电票交易的安全性</span>
+							<span class="wd3">已设置</span>
+							<a href="#" class="wd4">修改</a>
+						</li>
+						<li>
+							<span class="wd1">身份认证</span>
+							<span class="wd2">认证可以提高其他用户对您的信任感</span>
+							<span class="wd3">未认证</span>
+							<a href="#" class="wd4">认证</a>
+						</li>
+						<li>
+							<span class="wd1">绑定手机</span>
+							<span class="wd2">您已绑定了手机 <b>152****7778</b> 您的手机可以用来交易过程中确认操作，找回密码</span>
+							<span class="wd3 done">已绑定</span>
+							<a href="#" class="wd4">绑定新手机</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+
+</html>

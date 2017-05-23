@@ -1,0 +1,449 @@
+/**********消息中心************/
+.atitle{
+	padding-top: 20px;
+	border-bottom: 2px solid #f2ebe9;
+}
+.atitle-text{
+	float: left;
+	line-height: 38px;
+	font-size: 18px;
+	border-bottom:2px solid #edaa53;
+	margin-bottom: -2px;
+	padding-left:35px;
+	padding-right: 35px;
+}
+.atitle-right{
+	float: right;
+	font-size: 16px;
+	line-height: 38px;
+	padding-right: 20px;
+	color: #edaa53;
+}
+.messageTitle{
+	background-color: #f6f6f6;
+	margin-top: 30px;
+}
+.messageTitle div{
+	float: left;
+	line-height: 48px;
+	text-align: left;
+	font-size: 16px;
+	color: #5d5d5d;
+}
+.messageTitle .messageCheck{
+	width:250px;
+	margin-left: 36px;
+}
+.messageTitle .messageName{
+	width:302px;
+}
+.messageItem{
+
+}
+.messageItemNew{
+	background-color: #fcfbfb;
+}
+.messageItem div{
+	float: left;
+	line-height: 80px;
+	text-align: left;
+	border-bottom: 2px dashed #ececec;
+}
+.messageItem .messageCheck{
+	width:250px;
+	margin-left: 36px;
+}
+.messageItem .messageName{
+	width:302px;
+}
+.messageItem .messageTime{
+	width:340px;
+}
+.messageButtons{
+	line-height: 80px;
+	text-align: left;
+	margin-left:36px;
+}
+.messageButtons a:hover{
+	color: #edaa53;
+}
+.messageButtonAll{
+	display: inline-block;
+	margin-left:20px;
+	font-size: 16px;
+}
+.messageButtonRead,
+.messageButtonDelete{
+	color:#edaa53;
+	font-size: 16px;
+}
+.messageButtonRead{
+	margin-left:33px;
+	display: inline-block;
+	margin-right: 22px;
+}
+/**********消息中心************/
+.ui-pagination {
+    padding: 30px 0;
+    width: 100%;
+}
+.ui-pagination ul {
+    text-align: center;
+}
+.ui-pagination ul li {
+    display: inline-block;
+    margin: 5px;
+}
+.ui-pagination ul li a {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #999;
+    cursor: pointer;
+    display: block;
+    font-family: Helvetica;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    text-align: center;
+   	padding:0px 15px;
+}
+.ui-pagination ul li a:hover, .ui-pagination ul li a:active {
+    background-color: #edaa53;
+    border: 1px solid #edaa53;
+    color: #fff;
+}
+.ui-pagination ul li.disabled .ellipse {
+    color: #999;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 0 1px 1px;
+    text-align: center;
+    width: 26px;
+}
+.ui-pagination ul li.active a {
+    background-color: #edaa53;
+    border: 1px solid #edaa53;
+    color: #fff;
+}
+.ui-pagination ul li.disabled a {
+    background-color: #cecece;
+    border: 1px solid #cccccc;
+    color: #fff;
+}
+.ui-pagination ul li.previous a, .ui-pagination ul li.nextpage a {
+    width: 74px;
+}
+
+/**********企业认证**********/
+.certificationBox{
+	margin:30px 30px 0px 30px;
+	border:1px solid #d8d8d8;
+}
+.certificationBoxTitle{
+	font-size:16px;
+	color:#5d5d5d;
+	line-height: 56px;
+	border-bottom: 1px solid #d8d8d8;
+	padding-left: 20px;
+}
+.certificationBoxYellow .certificationBoxTitle span{
+	color:#edaa53;
+}
+
+.certificationBoxBrown .certificationBoxTitle span{
+	color:#44120c;
+}
+.cbb-div{
+	margin-top: 40px;
+	text-align: center;
+}
+.cbb-div b{
+	display:inline-block;
+	width:20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	color:white;
+	border-radius: 10px;
+}
+.certificationBoxYellow .cbb-div b{
+	background-color: #edaa53;
+}
+.certificationBoxBrown .cbb-div b{
+	background-color: #44120c;
+}
+.cbb-div i{
+	width:14px;
+	height: 16px;
+	margin-right: 20px;
+	margin-left: 20px;
+	display: inline-block;
+}
+.certificationBoxYellow .cbb-div i{
+	background:url(../images/account/cbb-larger-yellow.png) no-repeat;
+}
+.certificationBoxBrown .cbb-div i{
+	background:url(../images/account/cbb-larger-brown.png) no-repeat;
+}
+.cbb-div span{
+	margin-left:8px;
+	display: inline-block;
+}
+.cbb-button{
+	width:180px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: white;
+	border: none;
+	margin:30px auto;
+	display: block;
+	border-radius: 3px;
+}
+.certificationBoxYellow .cbb-button{
+	background-color: #edaa53;
+}
+.certificationBoxBrown .cbb-button{
+	background-color: #44120c;
+}
+
+.certificationForm{
+	border-bottom:2px solid #f4f4f4;
+}
+.cf-lengend{
+	width:160px;
+	height: 48px;
+	line-height: 48px;
+	margin-top:30px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	background-color: #f6edea;
+	color: #5d5d5d;
+	text-align: center;
+	font-size: 16px;
+}
+
+
+.cfl-label2,.cfl-label,.cfl-body{
+	float: left;
+}
+.cfl-label{
+	width:100px;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 186px;
+	font-size: 16px;
+	text-align: left;
+}
+.cfl-label2{
+	width:132px;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 186px;
+	font-size: 16px;
+	text-align: left;
+}
+.cfl-body{
+	margin-left: 19px;
+}
+.cflb-input{
+	width:410px;
+	height: 42px;
+	border:1px solid #dddddd;
+	position: relative;
+}
+.cflb-input input{
+	font-size: 16px;
+	line-height: 42px;
+	height: 42px;
+	width:250px;
+	padding-left:19px;	
+	border:none;
+}
+
+.cflb-input .cflbi-get{
+	font-size: 14px;
+	line-height: 44px;
+	height: 44px;
+	width:100px;
+	text-align: center;		
+	border:none;
+	background-color:#44120c;
+	color: white;
+	position: absolute;
+	top:-1px;
+	right:-1px;
+	cursor: pointer;
+}
+.cflbi-upload{
+	width:128px;
+	height:40px;
+	line-height: 40px;
+	background-color: #fff5e7;	
+	text-align: center;
+	color: #edaa53;
+	font-size: 16px;
+	border: 1px solid #edaa53;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.cflb-input .cflbi-file{
+	position: absolute;
+	display: block;
+	width:128px;
+	padding-left: 0px;
+	height: 40px;
+	left:0px;
+	top:0px;
+	cursor: pointer;
+    font-size: 30px;
+    outline: medium none;
+    position: absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    opacity:0; 
+}
+.cflb-note{
+	height: 30px;
+	line-height: 30px;
+	color:#df4d46;
+	font-size: 14px;
+}
+.cflb-note2{
+	height: 30px;
+	line-height: 30px;
+	color:#b8b8b8;
+	font-size: 14px;
+}
+.cflb-note2 i.failIcon{
+	display: inline-block;
+	margin-bottom: -5px;
+	margin-left:20px;
+	margin-right:10px;
+	width:20px;
+	height: 20px;
+	background:url(../images/failIconGray.png) no-repeat;
+}
+.cflb-note2 a,.cflb-note2 a:hover{
+	color:#aa3b17;
+}
+.cflb-note i.failIcon{
+	display: inline-block;
+	margin-bottom: -5px;
+	margin-left:20px;
+	margin-right:10px;
+	width:20px;
+	height: 20px;
+	background:url(../images/failIcon.png) no-repeat;
+}
+.grayBgBt{
+	background-color:#b8b8b8;
+}
+.cflb-input .grayBgBt{
+	background-color:#b8b8b8;
+}
+.cf-input-certification{
+	display: block;
+	width:180px;
+	height: 40px;
+	border: none;
+	background-color: #edaa53;
+	border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	margin:60px auto
+}
+.cf-input-binding{
+	display: block;
+	width:180px;
+	height: 40px;
+	border: none;
+	background-color: #44120c;
+	border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	margin:60px auto
+}
+/**********银行账号**********/
+.BankAccountTab{
+	background-color: #f2ebe9;
+}
+.BankAccountTab a{
+	display: block;
+	float: left;
+	width:175px;
+	height: 58px;
+	text-align: center;
+	line-height: 58px;
+	margin-right: 3px;
+	font-size: 18px;
+	color: #2e2e2e;
+	background-color: #f0dcd8;
+}
+.BankAccountTab a.bat-active{
+	color: #aa3c16;
+	background-color:white;
+}
+.BankAccountTip{
+	height: 34px;
+	line-height: 34px;
+	padding-left: 18px;
+	border: 1px solid #e5c4b9;
+	background-color: #fff5f2;
+	font-size: 14px;
+	color: #aa3c16;
+	margin-top: 20px;
+}
+.BankAccountTip i{
+	width:20px;
+	height: 20px;
+	background:url(../images/account/ba-close.png) no-repeat;
+	float: right;
+	margin-right: 20px;
+	margin-top: 7px;
+	display: block;
+}
+.BankAccountAddWrapper{
+	margin-top: 34px;
+	margin-left:35px;
+}
+.BankAccountAddBox{
+	width:298px;
+	height: 178px;
+	border:1px solid #d8d8d8;
+	float: left;
+	margin-right: 30px;
+}
+.baab-icon{
+	width:50px;
+	height: 50px;
+	background:url(../images/account/baab-add.png) no-repeat;
+	margin:46px auto 20px auto;
+}
+.baab-text{
+	color:#d8d8d8;
+	font-size: 18px;
+	text-align: center;
+}
+.BankAccountList{
+	margin-top: 30px;
+}
+.BankAccountList table{
+	width: 100%;
+
+	border-spacing: none;
+	border-collapse:collapse;
+}
+.BankAccountList table th{
+	background-color: #f6f6f6;
+	color: #5d5d5d;
+	height: 48px;
+}

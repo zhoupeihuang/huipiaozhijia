@@ -1,0 +1,68 @@
+
+.homepage-banner-area {
+	width: 100%;
+	height: 520px
+}
+
+.homepage-banner-area .banner-bg-box {
+	width: 100%;
+	height: 520px;
+	background: url(../images/bannermax.png) top center no-repeat;
+	position: relative
+}
+/*
+.homepage-banner-area .banner-bg-box .banner-center-area {
+	width: 1200px;
+	height: 495px;
+	position: relative;
+	z-index: 2;
+	top: 20px;
+	margin: 0 auto
+}*/
+
+.homepage-banner-area .banner-bg-box .wave-roll-area {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0
+}
+
+.homepage-banner-area .banner-bg-box .wave-roll-area ul {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 6000px
+}
+
+.homepage-banner-area .banner-bg-box .wave-roll-area ul .wave-box {
+	float: left;
+	width: 3000px;
+	height: 120px
+}
+
+.homepage-banner-area .banner-bg-box .wave-roll-area ul .wave-box .wave-bg1 {
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	background: url(../images/a1.png)
+}
+
+.homepage-banner-area .banner-bg-box .wave-roll-area ul .wave-box .wave-bg2 {
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	bottom: 0;
+	z-index: 3;
+	background: url(../images/A2.png)
+}
+
+.homepage-banner-area .banner-bg-box .wave-roll-area ul .wave-box .wave-bg3 {
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	background: url(../images/A3.png)
+}

@@ -1,0 +1,40 @@
+<header id="header">
+	<div class="headBox">
+		<div class="mainbox cf">
+			<div class="leftHeadBox ">
+				<img src="images/logo.png" />
+			</div>
+			<div class="rightHeadBox">
+				<ul>
+					<li >
+						<a href="index.html" class="rightHBActive">首页</a>
+					</li>
+					<li>
+						<a href="activity.html">我要贴现</a>
+					</li>
+					<li>
+						<a href="riskTip.html">我要收票</a>
+					</li>
+					<li>
+						<a href="notice.html">票据资讯</a>
+					</li>
+					<li class="rightHBeji">
+						<a href="notice.html" class="userIcon ">
+							我的账户
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+	$(function(){
+		$(".rightHeadBox ul li").hover(function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+			$(this).children("a").addClass("rightHBhover");
+		},function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+		})
+	})
+</script>

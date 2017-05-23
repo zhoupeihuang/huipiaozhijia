@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>	
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="bgf7">
+		<nav id="navhead">
+	<div class="navhead ">
+		<div class="mainbox ">
+			<div class="leftnavhead">客服电话：400-6609-655&nbsp;&nbsp;&nbsp;&nbsp;交易时间：上午8:00 - 下午16:30（工作日）</div>
+			<div class="rightnavhead">
+				<ul>
+					<li>
+						<a href="">新手指引</a>
+					</li>
+					<li>
+						<a href="">安全保障</a>
+					</li>
+					<li>
+						<a href="">登录</a>
+					</li>
+					<li>
+						<a href="">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav> 
+		<header id="header">
+	<div class="headBox">
+		<div class="mainbox cf">
+			<div class="leftHeadBox ">
+				<img src="images/logo.png" />
+			</div>
+			<div class="rightHeadBox">
+				<ul>
+					<li >
+						<a href="index.html" class="rightHBActive">首页</a>
+					</li>
+					<li>
+						<a href="activity.html">我要贴现</a>
+					</li>
+					<li>
+						<a href="riskTip.html">我要收票</a>
+					</li>
+					<li>
+						<a href="notice.html">票据资讯</a>
+					</li>
+					<li class="rightHBeji">
+						<a href="notice.html" class="userIcon ">
+							我的账户
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+	$(function(){
+		$(".rightHeadBox ul li").hover(function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+			$(this).children("a").addClass("rightHBhover");
+		},function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+		})
+	})
+</script> 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="breadCrumb">首页 > 注册</div>
+			<div class="whitePage">
+				<div class="tabBarT">
+					<ul>
+						<li class="tbtActive">1  注册信息</li>
+						<li>2  企业信息完善</li>
+						<li>3  注册成功</li>
+					</ul>
+				</div>
+				<div class="wpBody">
+					<div class="wpb-title">
+						<div class="wpb-title-text"><b class="wpbtt-user"></b>用户注册</div>
+						<div class="wpb-title-types cf">
+							<div class="wpb-type-item wpbti-active">持票方</div>
+							<div class="wpb-type-item">资金方</div>
+							<div class="wpb-type-item">两者皆有</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label">手机号码</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input">
+								<input type="text"  placeholder="请输入您注册时手机号码"/>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>您输入的手机号码错误
+							</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label"></div>
+						<div class="wpbl-body">
+							<div class="wpblb-input" id="captcha_div" style="border: none;height: 38px;">
+								
+							</div>
+							<div class="wpblb-note">
+								<i class="succIcon"></i><em>验证成功</em>
+							</div>
+						</div>
+					</div>	
+					<div class="wpb-line cf">
+						<div class="wpbl-label">登录密码</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input">
+								<input type="text"  placeholder="请输入您的登录密码"/>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>两次输入的密码不一致！
+							</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label">确认密码</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input">
+								<input type="text"  placeholder="再次输入您的登录密码"/>
+							</div>
+							<div class="wpblb-note">
+								
+							</div>
+						</div>
+					</div>	
+					<div class="wpb-line cf">
+						<div class="wpbl-label">短信验证</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input">
+								<input type="text"  placeholder="请输入短信验证码"/>
+								<div class="wpblbi-get grayBgBt">获取验证码</div>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>您输入的短信验证码错误
+							</div>
+							<div class="wpblb-note2">
+								<i class="failIcon"></i>收不到短信？<a>接听电话</a>获取验证码
+							</div>							
+						</div>
+					</div>						
+					<div class="recommend-button">推荐邀请码（选填）<i class=""></i></div>					
+					<div class="wpb-line cf" id="recommend-wrapper">
+						<div class="wpbl-label">邀请码</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input">
+								<input type="text"  placeholder="请输入推荐人邀请码 ( 选填 )"/>
+							</div>
+							<div class="wpblb-note">
+								
+							</div>
+						</div>
+					</div>		
+					<div class="wpb-xieyi">
+						<b class="jt_on jt"></b>我已阅读并同意<a target="_blank">《汇票之家注册服务协议》</a>
+					</div>
+					<input class="wpb-input-register grayBgBt" type="button" value="完成注册"/>							
+				</div>		
+			</div>
+		</section>
+		<!--内部内容-->		
+		<footer id="footer">
+<div class="footerBoxOuter">	
+	<div class="footerBox">
+		<div class="footerFirstBox cf">
+			<div class="footerWebsiteMap">
+				<ul class="cf">
+					<li>
+						<div class="fwmTitle">
+							<a>关于XXX</a>
+						</div>
+						<div class="fwmList">
+							<a>关于我们</a>
+							<a>网站声明</a>
+							<a>加入我们</a>
+							<a>网站公告</a>							
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>帮助中心</a>
+						</div>
+						<div class="fwmList">
+							<a>账号管理</a>
+							<a>我是卖方</a>
+							<a>我是买方</a>
+							<a>常用知识</a>							
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>安全保障</a>
+						</div>
+						<div class="fwmList">
+							<a>资金安全</a>
+							<a>交易安全</a>	
+							<a>系统安全</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>媒体报道</a>
+						</div>
+						<div class="fwmList">
+							<a>资金安全</a>
+							<a>交易安全</a>						
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>联系我们</a>
+						</div>
+						<div class="fwmList">
+							<a>网站地图</a>
+							<a>联系我们</a>						
+						</div>
+					</li>					
+				</ul>
+			</div>
+			<div class="footerCustomService">
+				<div class="fcsPhone">
+					<div class="fcsPhone1">400-6609-655</div>
+					<div class="fcsPhone2">交易时间：上午8:00-下午16:30(工作日)</div>
+				</div>
+				<div class="fcsService">
+					<div>“QQ在线客服”或社区“客服中心”</div>
+					<div>关注“付融宝微服务”微信公众号联系客服</div>
+					<div>省互联网金融协会 投诉电话：025-58588436</div>
+					<div>邮箱地址：Jslmf@263.net</div>				
+				</div>				
+			</div>
+		</div>
+		<div class="footerLastBox cf">
+			<div class="flbEwm">
+				<img src="images/ewm.png" />
+			</div>
+			<div class="flbCopyright">
+				<div class="flbca">
+					友情链接：
+					<a>网贷之家</a>｜<a>麦芽数据</a>｜<a>易钢在线</a>｜<a>锋鸟软件</a>
+				</div>
+				<div class="flbcb">© 2017 小财迷 91xcm.com 版权所有. 上海问财互联网金融信息服务有限公司. 沪ICP备16002215号.理财有风险 投资需谨慎 	</div>
+				<div class="flbcc">
+					<a></a>	<a></a>	<a></a>	<a></a>	<a></a>	<a></a>
+				</div>
+			</div>
+		</div>
+		<div class="footerLogoBox">
+			<img src="images/bottom-logo.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;汇票&nbsp;&nbsp;&nbsp;&nbsp;解手可及
+		</div>
+	</div>
+</div>
+</footer> 
+		<script src="http://c.dun.163yun.com/js/c.js"></script>	
+		<script type="text/javascript">
+			$(function(){
+
+			    $(".wpb-type-item").click(function(){
+					$(this).siblings().removeClass("wpbti-active");
+					$(this).addClass("wpbti-active");
+				});		
+				
+			    $(".recommend-button").click(function(){
+					$("#recommend-wrapper").fadeToggle(0);		
+					$(this).find("i").toggleClass("r-down");
+				});				
+				  // 验证码组件初始化
+			      var opts = {
+			        "element": "captcha_div", // 可以是验证码容器id，也可以是HTMLElement
+			        "captchaId": "d02cef83fa0d4e6fad71fea628a430bf", // 这里填入申请到的验证码id
+			        "width": 352, // 验证码组件显示宽度
+			        "verifyCallback": function(ret){ // 用户只要有拖动/点击，就会触发这个回调
+			          if(ret['value']){ 
+			          // true:验证通过 false:验证失败
+			          // $("#gainMessage").removeAttr("disabled"); 
+			           $("#quickLogin").removeAttr("disabled"); // 用户完成拖动之后再启用提交按钮
+			            $("#successInfo").html('<i class="isucInfo"></i>验证成功'); 
+			            $("#smscodeShow").html("");
+			           $("#smscodeframe").removeClass("lb02").addClass("lb01");
+			          }
+			        }
+			      };
+			      var ins = new NECaptcha(opts);				
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/PEYTON.css"/>
+		<script>
+			$(function(){
+				$(".tabBarT ul li").click(function(){
+					var indexs = $(this).index();
+					$(this).addClass("tbtActive").siblings().removeClass("tbtActive");
+					$(this).parents(".tabBarT").next(".tabBarM").children("ul").children("li").eq(indexs).show().siblings().hide();	
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="tabBarT">
+			<ul>
+				<li class="tbtActive">1.注册信息</li>
+				<li>2.企业信息完善</li>
+				<li>3.注册成功</li>
+			</ul>
+		</div>
+		<div class="tabBarM cf">
+			<ul>
+				<li class="tbtShow">11</li>
+				<li>22</li>
+				<li>33</li>
+			</ul>
+		</div>
+		<
+	</body>
+</html>

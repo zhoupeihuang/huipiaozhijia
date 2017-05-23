@@ -1,0 +1,34 @@
+<!--第三层-->
+<div class="mmSFBox cf">
+	<div class="mmHNav">
+		<ul>
+			<li class="mmHNavActive">我是卖方</li>
+			<li>我是买方</li>
+		</ul>
+	</div>
+	<div class="mmHMain cf">
+		<ul>
+			<li>
+				<div class="mmhLine">询价信息<b>0</b>条处于交易进行中</div>
+				<div class="mmhLine">交易订单<b>0</b>条交易订单状态处于交易进行中</div>
+				<input type="button" class="mmhBtn" value="马上发布" />
+				<p class="mmhLt">有票要贴现？赶紧发布贴现需求吧！</p>
+			</li>
+			<li>
+				<div class="mmhLine">2询价信息<b>0</b>条处于交易进行中</div>
+				<div class="mmhLine">2交易订单<b>0</b>条交易订单状态处于交易进行中</div>
+				<input type="button" class="mmhBtn" value="马上发布" />
+				<p class="mmhLt">有票要贴现？赶紧发布贴现需求吧！</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(function(){
+		$(".mmHNav ul li").click(function(){
+			var indexs = $(this).index();
+			$(this).addClass("mmHNavActive").siblings().removeClass("mmHNavActive");
+			$(".mmHMain ul li").eq(indexs).show().siblings().hide();
+		})
+	})
+</script>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zp.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="bgf7">
+		<nav id="navhead">
+	<div class="navhead ">
+		<div class="mainbox ">
+			<div class="leftnavhead">客服电话：400-6609-655&nbsp;&nbsp;&nbsp;&nbsp;交易时间：上午8:00 - 下午16:30（工作日）</div>
+			<div class="rightnavhead">
+				<ul>
+					<li>
+						<a href="">新手指引</a>
+					</li>
+					<li>
+						<a href="">安全保障</a>
+					</li>
+					<li>
+						<a href="">登录</a>
+					</li>
+					<li>
+						<a href="">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav> 
+		<header id="header">
+	<div class="headBox">
+		<div class="mainbox cf">
+			<div class="leftHeadBox ">
+				<img src="images/logo.png" />
+			</div>
+			<div class="rightHeadBox">
+				<ul>
+					<li >
+						<a href="index.html" class="rightHBActive">首页</a>
+					</li>
+					<li>
+						<a href="activity.html">我要贴现</a>
+					</li>
+					<li>
+						<a href="riskTip.html">我要收票</a>
+					</li>
+					<li>
+						<a href="notice.html">票据资讯</a>
+					</li>
+					<li class="rightHBeji">
+						<a href="notice.html" class="userIcon ">
+							我的账户
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+	$(function(){
+		$(".rightHeadBox ul li").hover(function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+			$(this).children("a").addClass("rightHBhover");
+		},function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+		})
+	})
+</script> 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox mt20 mb20 cf">
+				<link rel="stylesheet" href="css/just-tip.css" />
+<script src="js/justTools.js" type="text/javascript" charset="utf-8"></script>
+<script>
+			$(function() {
+				$("#tip1").click(function(){
+					var _this = $(this);
+					_this.justToolsTip({
+				        animation:"flipIn",
+				        contents:'Tssipso <a href="http://www.baidu.com">管理</a>',
+				        gravity:'left'
+				    });
+				})
+				$("#tip2").click(function(){
+					var _this = $(this);
+					_this.justToolsTip({
+				        animation:"flipIn",
+				        contents:'Tssipso ',
+				        gravity:'top'
+				    });
+				})
+				$("#tip3").click(function(){
+					var _this = $(this);
+					_this.justToolsTip({
+				        animation:"flipIn",
+				        contents:'Tssipso ',
+				        gravity:'top'
+				    });
+				})
+				$("#tip4").click(function(){
+					var _this = $(this);
+					_this.justToolsTip({
+				        animation:"flipIn",
+				        contents:'Tssipso ',
+				        gravity:'top'
+				    });
+				})
+				$("#tip5").click(function(){
+					var _this = $(this);
+					_this.justToolsTip({
+				        animation:"flipIn",
+				        contents:'Tssipso ',
+				        gravity:'right'
+				    });
+				})
+			});
+</script>			
+<div class="myAccountLeftBox cf">
+	<div class="mcHeadBox">
+		<img src="images/account/zpicon4.png" />
+	</div>
+	<div class="mcNameBox">
+		钢钢网 <span class="nametag nametagOver">未认证</span>
+	</div>
+	<div class="mcIconBox">
+		<ul>
+			<li id="tip1" data-tipso="Tips">
+				<i class="mcnbICON mticon1"></i>
+			</li>
+			<li id="tip2" data-tipso="Tips">
+				<i class="mcnbICON mticon2"></i>
+				
+			</li>
+			<li id="tip3" data-tipso="Tips">
+				<i class="mcnbICON mticon3"></i>
+				
+			</li>
+			<li id="tip4" data-tipso="Tips">
+				<i class="mcnbICON mticon4"></i>
+				
+			</li>
+			<li id="tip5" data-tipso="Tips">
+				<i class="mcnbICON mticon5"></i>
+				
+			</li>
+		</ul>
+	</div>
+	<div class="MCNavBox cf">
+		<dl>
+			<dt><i class="mcnbICON micon1"></i>账户管理</dt>
+			<dd class="MCNBActive">
+				<a href="#">基础信息</a>
+			</dd>
+			<dd>
+				<a href="#">企业认证</a>
+			</dd>
+			<dd>
+				<a href="#">银行账户</a>
+			</dd>
+			<dd>
+				<a href="#">安全中心</a>
+			</dd>
+		</dl>
+
+	</div>
+	<div class="MCNavBox cf">
+		<dl>
+			<dt><i class="mcnbICON micon2"></i>我是卖方</dt>
+			<dd>
+				<a href="#">发布票据转让需求</a>
+			</dd>
+			<dd>
+				<a href="#">我的询价</a>
+			</dd>
+			<dd>
+				<a href="#">我的电票交易订单</a>
+			</dd>
+		</dl>
+
+	</div>
+	<div class="MCNavBox cf">
+		<dl>
+			<dt><i class="mcnbICON micon3"></i>我是买方</dt>
+			<dd>
+				<a href="#">我的报价</a>
+			</dd>
+			<dd>
+				<a href="#">我的电票交易订单</a>
+			</dd>
+		</dl>
+
+	</div>
+	<div class="MCNavBox cf">
+		<dl>
+			<dt><i class="mcnbICON micon4"></i>帮助中心</dt>
+		</dl>
+
+	</div>
+</div> 
+				<div class="rightContent">
+					 <div class="BankAccountTab cf">
+						<a class="bat-active">卖方银行账户</a>
+						<a>买方银行账户</a>
+					 </div>
+					<div class="BankAccountTip cf">
+						友情提示：该账户必须是卖方进行背书的银行账户，同时用于交易成功后接收买方的付款。
+						<i></i>
+					</div>
+					<div class="BankAccountAddWrapper cf">
+						<div class="BankAccountAddBox">
+							<div class="baab-icon"></div>
+							<div class="baab-text">添加卖方银行账户</div>
+						</div>
+						<div class="BankAccountAddBox">
+							<div class="baab-icon"></div>
+							<div class="baab-text">添加卖方银行账户</div>
+						</div>						
+					</div>
+					<div class="BankAccountList mb30">
+						<table>
+							
+								<tr>
+									<th>户名</th>
+									<th>开户行全称</th>
+									<th>银行账户</th>
+									<th>联行号</th>
+									<th>状态</th>
+									<th>添加时间</th>
+									<th>操作</th>									
+								</tr>
+						
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--内部内容-->
+		<footer id="footer">
+<div class="footerBoxOuter">	
+	<div class="footerBox">
+		<div class="footerFirstBox cf">
+			<div class="footerWebsiteMap">
+				<ul class="cf">
+					<li>
+						<div class="fwmTitle">
+							<a>关于XXX</a>
+						</div>
+						<div class="fwmList">
+							<a>关于我们</a>
+							<a>网站声明</a>
+							<a>加入我们</a>
+							<a>网站公告</a>							
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>帮助中心</a>
+						</div>
+						<div class="fwmList">
+							<a>账号管理</a>
+							<a>我是卖方</a>
+							<a>我是买方</a>
+							<a>常用知识</a>							
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>安全保障</a>
+						</div>
+						<div class="fwmList">
+							<a>资金安全</a>
+							<a>交易安全</a>	
+							<a>系统安全</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>媒体报道</a>
+						</div>
+						<div class="fwmList">
+							<a>资金安全</a>
+							<a>交易安全</a>						
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>联系我们</a>
+						</div>
+						<div class="fwmList">
+							<a>网站地图</a>
+							<a>联系我们</a>						
+						</div>
+					</li>					
+				</ul>
+			</div>
+			<div class="footerCustomService">
+				<div class="fcsPhone">
+					<div class="fcsPhone1">400-6609-655</div>
+					<div class="fcsPhone2">交易时间：上午8:00-下午16:30(工作日)</div>
+				</div>
+				<div class="fcsService">
+					<div>“QQ在线客服”或社区“客服中心”</div>
+					<div>关注“付融宝微服务”微信公众号联系客服</div>
+					<div>省互联网金融协会 投诉电话：025-58588436</div>
+					<div>邮箱地址：Jslmf@263.net</div>				
+				</div>				
+			</div>
+		</div>
+		<div class="footerLastBox cf">
+			<div class="flbEwm">
+				<img src="images/ewm.png" />
+			</div>
+			<div class="flbCopyright">
+				<div class="flbca">
+					友情链接：
+					<a>网贷之家</a>｜<a>麦芽数据</a>｜<a>易钢在线</a>｜<a>锋鸟软件</a>
+				</div>
+				<div class="flbcb">© 2017 小财迷 91xcm.com 版权所有. 上海问财互联网金融信息服务有限公司. 沪ICP备16002215号.理财有风险 投资需谨慎 	</div>
+				<div class="flbcc">
+					<a></a>	<a></a>	<a></a>	<a></a>	<a></a>	<a></a>
+				</div>
+			</div>
+		</div>
+		<div class="footerLogoBox">
+			<img src="images/bottom-logo.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;汇票&nbsp;&nbsp;&nbsp;&nbsp;解手可及
+		</div>
+	</div>
+</div>
+</footer> 
+	</body>
+
+</html>

@@ -1,0 +1,159 @@
+.rightContent{
+	width: 964px;
+	background-color: #fff;
+	position: relative;
+	float:right;
+}
+/*-------安全中心--------*/
+.scStep{
+	text-align: center;
+	color: #993300;
+	font-size: 16px;
+	line-height: 36px;
+	margin-top: 45px;
+}
+.scStep span{
+	display: block;
+}
+.scStep img{
+	margin-top: 15px;
+}
+.scList{
+	width: 890px;
+	height: 670px;
+	margin: 20px auto 0 auto;
+}
+.scList li{
+	background-image: url(../images/account/zpicon1.gif);
+	background-repeat:repeat-x;
+	background-position: bottom;
+	height: 90px;
+	position: relative;
+	font-size: 14px;
+	line-height: 18px;
+}
+.scList li span,.scList li a{
+	position: absolute;
+	
+}
+.scList li .wd1{
+	left: 0;
+	top: 35px;
+	color: #333333;
+	width: 116px;
+}
+.scList li .wd2{
+	left: 120px;
+	top: 35px;
+	color: #cccccc;
+	width: 560px;
+}
+.scList li .wd2 b{
+	color: #ff9966;
+	font-weight: normal;
+}
+.scList li .wd3{
+	width: 114px;
+	left: 676px;
+	top: 35px;
+	color: #cccccc;
+	background-image: url(../images/account/zpicon2.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	padding-left: 30px;
+}
+.scList li .done{
+	background-image: url(../images/account/zpicon1.png) !important;
+}
+.scList li .wd4{
+	width: 104px;
+	left: 790px;
+	top: 35px;
+	color: #3399ff;
+	
+}
+.scList li .wd4:hover{
+	color: #3399ff;
+	text-decoration: underline;
+}
+
+/*-------基础信息--------*/
+.baseTit{
+	width: 100px;
+	height: 46px;
+	text-align: center;
+	background-color: #f6edea;
+	font-size: 16px;
+	line-height: 46px;
+	color: #666666;
+	margin-top: 30px;
+	margin-left: 34px;
+}
+.bsBody{
+	width:660px;
+}
+
+.bsblb-input{
+	width:393px !important;
+}
+.bsblb-input input{
+	width:270px !important;
+}
+.bsblb-select{
+	width:450px !important;
+}
+.bsblb-select select{
+	width:126px !important;
+}
+.inputMust{
+	color: red;
+	font-size: 26px;
+	line-height: 42px;
+	color: #f34747;
+	position: absolute;
+	left: 406px;
+	top: 5px;
+}
+.bs-input-register{
+	width:393px !important;
+	}
+.wpblb-text a{
+	margin-left: 10px;
+	color: #cc3300;
+	font-size: 12px;
+	line-height: 42px;
+}
+.serviceType{
+	width:415px;
+	height: 42px;
+	position: relative;
+}
+.serviceType a{
+	width: 118px;
+	float: left;
+	background-color: #dddddd;
+	height: 42ox;
+	line-height: 42px;
+	margin-right: 20px;
+	text-align: center;
+	border-radius: 5px;
+	
+}
+.serviceType .redBg{
+	background-color: #c74011;
+	color: #fff;
+}
+.serviceType .redBg:hover{
+	color: #fff;
+}
+.serviceType a:hover{
+	color: #666666;
+}
+.bsLine{
+	height: 3px;
+	background-image: url(../images/account/zpicon1.gif);
+	background-repeat: repeat-x;
+	line-height: 0;
+	font-size: 0;
+	width: 964px;
+}

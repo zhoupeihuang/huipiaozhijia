@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zp.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="bgf7">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox mt20 mb20 cf">
+				@@include("../src/myAccountLeftNav.html") 
+				<div class="rightContent">
+					 <div class="atitle cf">
+					 	<div class="atitle-text">企业认证</div>
+					 </div>
+					 <div class="certificationForm">
+					 	<div class="cf-lengend">
+					 		绑定员工账户
+					 	</div>
+						<div class="cf-line cf">
+							<div class="cfl-label2">公司名称</div>
+							<div class="cfl-body">
+								<div class="cflb-input">
+									<input type="text"  placeholder="请输入公司名称"/>
+								</div>
+								<div class="cflb-note">
+									<i class="failIcon"></i>公司名称错误
+								</div>
+							</div>
+						</div>
+						<div class="cf-line cf">
+							<div class="cfl-label2">账号绑定手机号码</div>
+							<div class="cfl-body">
+								<div class="cflb-input">
+									<input type="text"  placeholder="请输入手机号码"/>
+								</div>
+								<div class="cflb-note">
+									<i class="failIcon"></i>您输入的手机号错误
+								</div>
+							</div>
+						</div>	
+						<div class="cf-line cf">
+							<div class="cfl-label2">短信验证</div>
+							<div class="cfl-body">
+								<div class="cflb-input">
+									<input type="text"  placeholder="请输入短信验证码"/>
+									<div class="cflbi-get grayBgBt">获取验证码</div>
+								</div>
+								<div class="cflb-note">
+									<i class="failIcon"></i>您输入的短信验证码错误
+								</div>
+								<div class="cflb-note2">
+									<i class="failIcon"></i>收不到短信？<a>接听电话</a>获取验证码
+								</div>							
+							</div>
+						</div>								
+					 </div>
+				 	 <input type="button" class="cf-input-binding"  value="提交认证"/>
+				</div>
+			</div>
+		</section>
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+
+</html>

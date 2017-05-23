@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ZP.css"/>
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="bgf7">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox cf">
+				@@include("../src/myAccountLeftNav.html")
+				<div class="rightContent">
+					<div class="atitle cf">
+						<div class="atitle-text">基础信息</div>
+					</div>
+					<div class="bsBody">
+					<div class="baseTit">
+						公司信息
+					</div>
+					<div class="wpb-line cf mt20">
+						<div class="wpbl-label">公司名称</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input bsblb-input">
+								<input type="text"  placeholder="请输入您的企业名称"/><span class="inputMust">*</span>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>错误信息错误信息错误信息
+							</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label">所在地区</div>
+						<div class="wpbl-body">
+							<div class="wpblb-select bsblb-select">
+								<select>
+									<option>省份选择</option>
+								</select>
+								<select>
+									<option>城市选择</option>
+								</select>
+								<select class="mr0">
+									<option>区县选择</option>
+								</select>
+								<span class="inputMust">*</span>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>错误信息错误信息错误信息
+							</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label">通讯地址</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input bsblb-input">
+								<input type="text"  placeholder="请输入您的通讯地址"/>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>错误信息错误信息错误信息
+							</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label">固定电话</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input bsblb-input">
+								<input type="text"  placeholder="区号+固定电话号码"/>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>错误信息错误信息错误信息
+							</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label">业务类型</div>
+						<div class="wpbl-body">
+							<div class="serviceType ">
+								<a href="#">买票</a>
+								<a href="#">卖票</a>
+								<a href="#" class="redBg">两者皆可</a>
+							</div>
+						</div>
+					</div>
+					<div class="bsLine mt40"></div>
+					<div class="baseTit">
+联系人信息
+					</div>
+					<div class="wpb-line cf mt20">
+						<div class="wpbl-label">姓名</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input bsblb-input">
+								<input type="text"  placeholder="请输入您的通讯地址"/>
+								<span class="inputMust">*</span>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>错误信息错误信息错误信息
+							</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label">手机号码 </div>
+						<div class="wpbl-body">
+							<div class="wpblb-text">
+								<span>152XXXX6666</span><a href="#">更换</a>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>错误信息错误信息错误信息
+							</div>
+						</div>
+					</div>
+					<div class="wpb-line cf">
+						<div class="wpbl-label">QQ</div>
+						<div class="wpbl-body">
+							<div class="wpblb-input bsblb-input">
+								<input type="text"  placeholder="请输入您的QQ号码"/>
+							</div>
+							<div class="wpblb-note">
+								<i class="failIcon"></i>错误信息错误信息错误信息
+							</div>
+						</div>
+					</div>
+					<input class="wpb-input-register mt40 bs-input-register" type="button" value="保存"/>
+				</div>	
+				</div>
+			</div>
+		</section>
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+
+</html>

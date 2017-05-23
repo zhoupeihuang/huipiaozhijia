@@ -1,0 +1,100 @@
+<section id="maxBox">
+			<script src="http://c.dun.163yun.com/js/c.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					// 验证码组件初始化
+					var opts = {
+						"element": "yanzm", // 可以是验证码容器id，也可以是HTMLElement
+						"captchaId": "d02cef83fa0d4e6fad71fea628a430bf", // 这里填入申请到的验证码id
+						"width": 320, // 验证码组件显示宽度
+						"verifyCallback": function(ret) { // 用户只要有拖动/点击，就会触发这个回调
+							if(ret['value']) {
+								// true:验证通过 false:验证失败
+								// $("#gainMessage").removeAttr("disabled"); 
+								$("#yzmMSG").html('<i class="isucInfo"></i>验证成功').css("color","#8EC571");
+							}
+						}
+					};
+					var ins = new NECaptcha(opts);
+					//勾选
+					$(".lmbMS3").click(function() {
+						$(this).toggleClass("lmbMS3No")
+					})
+					//密码切换
+					$(".lmbT ul li").click(function(){
+					var indexs = $(this).index();
+					$(this).addClass("lmbtActive").siblings().removeClass("lmbtActive");
+					$(this).parents(".lmbT").next(".lmbM").children("ul").children("li").eq(indexs).show().siblings().hide();	
+				})
+				})
+			</script>
+			<div class="loginBox">
+				<div class="mainbox loginBigTitle">
+
+					<div class="loginMainBox">
+						<div class="lmbT">
+							<ul>
+								<li class="lmbtActive">密码登录</li>
+								<li>验证码登录</li>
+							</ul>
+						</div>
+						<div class="lmbM">
+							<ul>
+								<li >
+									<span class="lmbMS1">
+		 							<b class="textDefT">手机号码</b>
+		 							<input type="text" class="textDef1" placeholder="请输入注册的手机号码" />
+		 							<span class="errorL"  >error Info</span>
+									</span>
+									<span class="lmbMS2">
+		 							<b class="textDefT">登录密码</b>
+		 							<input type="text" class="textDef1" placeholder="请输入您的登录密码" />
+		 							<span class="errorL"  >error Info</span>
+									</span>
+									<span class="lmbMS3">
+		 							记住用户名
+		 						</span>
+									<span class="lmbMS4">
+		 							<a href="#">忘记密码</a>
+		 						</span>
+									<span class="lmbMS5">
+		 							<input type="submit" class="SubDef1" name="" id="" value="立即登录" />
+		 						</span>
+									<span class="lmbMS6">
+		 							没有帐号？<a href="#">立即注册</a>
+		 						</span>
+
+								</li>
+								<li>
+									<span class="lmbMS1">
+		 							<b class="textDefT">手机号码</b>
+		 							<input type="text" class="textDef1" placeholder="请输入注册的手机号码" />
+		 							<span class="errorL"  >error Info</span>
+									</span>
+									<span class="lmbMS2">
+		 							<div class="lmbMLine" id="yanzm"> </div>
+		 							<span class="errorL" id="yzmMSG" >error Info</span>
+									</span>
+									<span class="lmbMS7">
+		 							<b class="textDefT">短信验证</b>
+		 							<input type="text" class="textDef1" placeholder="请输入短信验证码" />
+		 							<b class="textDefyzm">获取验证码</b>
+		 							<span class="errorL"  >error Info</span>
+									</span>
+									<span class="lmbMS8">
+										未注册汇票之家账户的手机号，登录时将自动注册汇票之家账号，且代表您已同意<a href="#">《注册服务协议及重要提示》</a>
+									</span>
+
+									<span class="lmbMS9">
+										<input type="submit" class="SubDef1" name="" id="" value="立即登录" />
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footerLMsg">
+				Copyright © 2016 小财迷（www.91xcm.com） 版权所有. 上海问财互联网金融信息服务有限公司. 沪ICP备16002215号.理财有风险 投资需谨慎
+			</div>
+		</section>
