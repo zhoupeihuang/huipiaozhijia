@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ZP.css"/>
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="mainbgs">
+		<nav id="navhead">
+	<div class="navhead ">
+		<div class="mainbox ">
+			<div class="leftnavhead">客服电话：400-6609-655&nbsp;&nbsp;&nbsp;&nbsp;交易时间：上午8:00 - 下午16:30（工作日）</div>
+			<div class="rightnavhead">
+				<ul>
+					<li>
+						<a href="">新手指引</a>
+					</li>
+					<li>
+						<a href="securityCenter.html">安全保障</a>
+					</li>
+					<li>
+						<a href="HelpCenter.html">帮助中心</a>
+					</li>
+					<li>
+						<a href="login.html">登录</a>
+					</li>
+					<li>
+						<a href="registera.html">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav> 
+		<header id="header">
+	<div class="headBox">
+		<div class="mainbox cf">
+			<div class="leftHeadBox ">
+				<img src="images/logo.png" />
+			</div>
+			<div class="rightHeadBox">
+				<ul>
+					<li >
+						<a href="index.html" class="rightHBActive">首页</a>
+					</li>
+					<li>
+						<a href="sellerPublish.html">我要贴现</a>
+					</li>
+					<li>
+						<a href="invoiceList.html">我要收票</a>
+					</li>
+					<li>
+						<a href="#">票据资讯</a>
+					</li>
+					<li class="rightHBeji">
+						<a href="MyAccount.html" class="userIcon ">
+							我的账户
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+	$(function(){
+		$(".rightHeadBox ul li").hover(function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+			$(this).children("a").addClass("rightHBhover");
+		},function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+		})
+	})
+</script> 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox cf mt20 mb20">
+				<link rel="stylesheet" href="css/just-tip.css" />
+<script src="js/justTools.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(function() {
+		$("#tip1").click(function() {
+			var _this = $(this);
+			_this.justToolsTip({
+				animation: "flipIn",
+				contents: 'Tssipso <a href="http://www.baidu.com">管理</a>',
+				gravity: 'left'
+			});
+		})
+		$("#tip2").click(function() {
+			var _this = $(this);
+			_this.justToolsTip({
+				animation: "flipIn",
+				contents: 'Tssipso ',
+				gravity: 'top'
+			});
+		})
+		$("#tip3").click(function() {
+			var _this = $(this);
+			_this.justToolsTip({
+				animation: "flipIn",
+				contents: 'Tssipso ',
+				gravity: 'top'
+			});
+		})
+		$("#tip4").click(function() {
+			var _this = $(this);
+			_this.justToolsTip({
+				animation: "flipIn",
+				contents: 'Tssipso ',
+				gravity: 'top'
+			});
+		})
+		$("#tip5").click(function() {
+			var _this = $(this);
+			_this.justToolsTip({
+				animation: "flipIn",
+				contents: 'Tssipso ',
+				gravity: 'right'
+			});
+		})
+	});
+</script>
+<div class="myAccountLeftBox cf">
+	<div class="bgWhite">
+		<div class="mcHeadBox">
+			<img src="images/account/zpicon4.png" />
+		</div>
+		<div class="mcNameBox">
+			<div class="namett">上海问财互联网金融有限公司</div>  <span class="nametag nametagOver">未认证</span>
+		</div>
+		<div class="mcIconBox">
+			<ul>
+				<li id="tip1" class=" luluGray" data-tipso="Tips">
+					<i class="mcnbICON mticon1"></i>
+				</li>
+				<li id="tip2" data-tipso="Tips">
+					<i class="mcnbICON mticon2"></i>
+
+				</li>
+				<li id="tip3" data-tipso="Tips">
+					<i class="mcnbICON mticon3"></i>
+
+				</li>
+				<li id="tip4" data-tipso="Tips">
+					<i class="mcnbICON mticon4"></i>
+
+				</li>
+				<li id="tip5" data-tipso="Tips">
+					<i class="mcnbICON mticon5"></i>
+
+				</li>
+			</ul>
+		</div>
+		<div class="MCNavBox cf">
+			<dl>
+				<dt><i class="mcnbICON micon1"></i>账户管理</dt>
+				<dd class="MCNBActive">
+					<a href="basicInfo.html">基础信息</a>
+				</dd>
+				<dd>
+					<a href="MyAccountCorporateCertification.html">企业认证</a>
+				</dd>
+				<dd>
+					<a href="MyAccountBankAccountSale.html">银行账户</a>
+				</dd>
+				<dd>
+					<a href="securityCenter.html">安全中心</a>
+				</dd>
+				<dd>
+					<a href="MyAccountMessageCenter.html">消息中心</a>
+				</dd>
+			</dl>
+
+		</div>
+		<div class="MCNavBox cf">
+			<dl>
+				<dt><i class="mcnbICON micon2"></i>我是卖方</dt>
+				<dd>
+					<a href="sellerPublish.html">发布票据转让需求</a>
+				</dd>
+				<dd>
+					<a href="buyerDetail.html">我的询价</a>
+				</dd>
+				<dd>
+					<a href="buyer.html">我的电票交易订单</a>
+				</dd>
+				<dd>
+					<a href="myBill.html">我的票据</a>
+				</dd>
+			</dl>
+
+		</div>
+		<div class="MCNavBox cf">
+			<dl>
+				<dt><i class="mcnbICON micon3"></i>我是买方</dt>
+				<dd>
+					<a href="sellerDetail.html">我的报价</a>
+				</dd>
+				<dd>
+					<a href="seller.html">我的电票交易订单<i>10</i></a>
+				</dd>
+			</dl>
+
+		</div>
+	</div>
+	<a class="HELPNavBox cf" href="HelpCenter.html">
+		<i class="mcnbICON micon5"></i>帮助中心
+	</a>
+</div>
+				<div class="mmSFBox cf top0">
+					<div class="mmHNav">
+						<a href="#" class="slBt">发布票据转让需求</a>
+						<ul>
+							<li class="mmHNavActive">电子票据<span>1</span></li>
+							<li class="">纸质票据<b>2</b></li>
+						</ul>
+					</div>
+					<div class="mmHMain cf">
+						<ul>
+							<li class="patrl0" style="display: block;">
+								<ul class="sellerNav">
+									<li class="slActive">
+										<div>全部</div>
+									</li>
+									<li>
+										<div>询价中<span>1</span></div>
+									</li>
+									<li>
+										<div>交易进行中<span>1</span></div>
+									</li>
+									<li>
+										<div>交易完成<span>1</span></div>
+									</li>
+									<li>
+										<div>交易关闭<span>1</span></div>
+									</li>
+								</ul>
+								<div class="BankAccountTip cf sellerTip">
+									友情提示：您尚未开通卖方电票在线交易权限，为了让您便捷、安全的交易，请您尽快开通卖方电票在线交易权限。
+									<a href="#">点击这里，马上开通</a>
+									<i></i>
+								</div>
+								<ul class="sellerTable">
+						<li class="slList1"><span>交易订单号 ：1201704262915</span><span>创建时间 ：2017-04-26  14:23:02</span><b>操作人：liyu111222(李煜)</b></li>
+						<li class="slList2">
+							<span class="swd1">
+								<em>重庆农村商业银行股份有限公司江北支行</em><b>询价中</b>
+							</span>
+							<span class="swd2">
+								银电 无
+							</span>
+							<span class="swd3">
+								票据类型
+							</span>
+							<span class="swd4">
+								300000元
+							</span>
+							<span class="swd5">
+								票据金额
+							</span>
+							<span class="swd6">2017-07-24</span>
+							<span class="swd7">汇票到期日</span>
+							<span class="swd8">
+								89天
+							</span>
+							<span class="swd9">剩余期限</span>
+							<span class="swd10">5家</span>
+							<span class="swd11">机构报价数</span>
+							<input type="button" value="查看票据详情" class="slbt1" />
+							<a href="#" class="slbt4">修改报价</a>
+						</li>
+						<li class="slList3">
+							<span>报价金额 ：280000 元 (约合利率 ：22.47%)</span>
+							<span>实需支付金额 ：280000元 (含 0元手续费)</span>
+							<span>报价时间 ：2017-05-05 14:52:56</span>
+						</li>
+					</ul>
+					<ul class="sellerTable">
+						<li class="slList1"><span>交易订单号 ：1201704262915</span><span>创建时间 ：2017-04-26  14:23:02</span><b>操作人：liyu111222(李煜)</b></li>
+						<li class="slList2">
+							<span class="swd1">
+								<em>重庆农村商业银行股份有限公司江北支行</em><b>交易进行中</b>
+							</span>
+							<span class="swd2">
+								银电 无
+							</span>
+							<span class="swd3">
+								票据类型
+							</span>
+							<span class="swd4">
+								300000元
+							</span>
+							<span class="swd5">
+								票据金额
+							</span>
+							<span class="swd6">2017-07-24</span>
+							<span class="swd7">汇票到期日</span>
+							<span class="swd8">
+								89天
+							</span>
+							<span class="swd9">剩余期限</span>
+							<span class="swd10">5家</span>
+							<span class="swd11">机构报价数</span>
+							<input type="button" value="查看票据详情" class="slbt1" />
+						</li>
+						<li class="slList3">
+							<span>报价金额 ：280000 元 (约合利率 ：22.47%)</span>
+							<span>实需支付金额 ：280000元 (含 0元手续费)</span>
+							<span>报价时间 ：2017-05-05 14:52:56</span>
+						</li>
+					</ul>
+					
+								<div class="slNoDate"><img src="images/account/zpicon7.png"/>没有找到符合条件的记录</div>
+								<div class="ui-pagination">
+	<ul class="pagination">
+		<li class="active">
+			<a>1</a>
+		</li>
+		<li>
+			<a href="javascript:pageSubmit(2)">2</a>
+		</li>
+		<li>
+			<a href="javascript:pageSubmit(3)">3</a>
+		</li>
+		<li class="disabled"><span class="ellipse">…</span></li>
+		<li>
+			<a href="javascript:pageSubmit(10)">10</a>
+		</li>
+		<li class="nextpage">
+			<a href="javascript:pageSubmit(2)" title="下一页">下一页</a>
+		</li>
+	</ul>
+</div> 
+							</li>
+							<li style="display: none;">
+
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--内部内容-->
+		<footer id="footer">
+<div class="footerBoxOuter">	
+	<div class="footerBox cf">
+			<div class="footerWebsiteMap">
+				<div class="fbo2-renzhen cf">
+					<a></a>	<a></a>	<a></a>	<a></a>	<a></a>	
+				</div>		
+				<ul class="cf">
+					<li>
+						<div class="fwmTitle">
+							<a>公司简介</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>新手指引</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>安全保障</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>帮助中心</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>加入我们</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>联系我们</a>
+						</div>
+					</li>					
+				</ul>
+			</div>
+			<div class="footerCustomService">
+				<div class="fcst-time">交易时间：上午8:00 - 下午16:30（工作日）</div>				
+				<div class="fcst-phone">400-825-8800</div>
+				<div class="fcst-time">汇票之家微信公众号：汇票之家</div>
+			</div>
+	</div>
+</div>
+<div class="footerBoxOuter2">	
+	<div class="footerBox">			
+		<div class="copyright">© 2017 小财迷 91xcm.com 版权所有. 上海问财互联网金融信息服务有限公司. 沪ICP备16002215号.理财有风险 投资需谨慎 	</div>
+	</div>
+</div>		
+</footer> 
+		<script>
+			$(function() {
+				//tab切换
+				$(".mmHNav>ul>li").click(function() {
+						var indexs = $(this).index();
+						$(this).addClass("mmHNavActive").siblings().removeClass("mmHNavActive");
+						$(".mmHMain>ul>li").eq(indexs).show().siblings().hide();
+					})
+					//关闭提示消息
+				$(".BankAccountTip i").click(function() {
+					$(this).parent().hide();
+				});
+			})
+		</script>
+	</body>
+
+</html>

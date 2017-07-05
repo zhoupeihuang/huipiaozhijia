@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zp.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="mainbgs">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox mt20 mb20 cf">
+				@@include("../src/myAccountLeftNav.html") 
+				<div class="rightContent">
+					 <div class="atitle cf">
+					 	<div class="atitle-text">消息中心</div>
+					 </div>
+					<div class="messagePage">
+						<div class="messagePageTitle cf">
+							<div class="mpt-name">体验金收益转出成功</div>
+							<div class="mpt-time">2017-10-29 10:57:16</div>
+							<a class="mpt-delete">删除</a>
+						</div>
+						<div class="messagePageContent">亲爱的财主，您于2017-10-29  17:58:29 转出XXX元体验金收益成功，具体详情请至账户中心查看！</div>
+						<div class="messagePageButtons">
+							<a class="mpb-link">返回列表</a>
+						</div>
+					</div>
+								 
+				</div>
+			</div>
+		</section>
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+
+</html>

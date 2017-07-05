@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zp.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="mainbgs">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox mt20 mb20 cf">
+				@@include("../src/myAccountLeftNav.html") 
+				<div class="rightContent">
+					 <div class="BankAccountTab cf">
+						<a class="bat-active">卖方银行账户</a>
+						<a>买方银行账户</a>
+					 </div>
+					<div class="BankAccountTipGreen cf">
+						审核结果 ：<span>审核通过</span>银行账户审核通过
+						<i></i>
+					</div>
+					<div class="sellerBankForm">
+						<div class="sbf-line cf">
+							<div class="sbf-label2">户名</div>
+								<div class="sbf-body">
+									<div class="sbfb-input sbfb-input-text">
+										XXXX公司
+									</div>							
+								</div>
+							</div>	
+							<div class="sbf-line cf">
+								<div class="sbf-label2">开户行全称</div>
+								<div class="sbf-body">
+									<div class="sbfb-input  sbfb-input-text">
+												XXXX公司
+									</div>								
+								</div>
+							</div>	
+							<div class="sbf-line cf">
+								<div class="sbf-label2">银行账号</div>
+								<div class="sbf-body">
+									<div class="sbfb-input  sbfb-input-text">
+										123456789987
+									</div>							
+								</div>
+							</div>									
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+		$(function(){
+			$(".BankAccountTipGreen i").click(function(){
+				$(this).parent().hide();	
+			});		
+		});
+
+		</script>		
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+
+</html>

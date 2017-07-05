@@ -1,13 +1,20 @@
-<section id="paging">
-	<div class="pagingBox">
-		<div class="pagingMain">
-			<span class="prevPage">上一页</span>
-			<span class="numPage pageActive">1</span>
-			<span class="numPage ">2</span>
-			<span class="numPage ">3</span>
-			<span class="numPage ">4</span>
-			<span class="numPage ">5</span>
-			<span class="nextPage">下一页</span>
-		</div>
-	</div>
-</section>
+<div class="ui-pagination">
+	<ul class="pagination">
+		<li class="active">
+			<a>1</a>
+		</li>
+		<li>
+			<a href="javascript:pageSubmit(2)">2</a>
+		</li>
+		<li>
+			<a href="javascript:pageSubmit(3)">3</a>
+		</li>
+		<li class="disabled"><span class="ellipse">…</span></li>
+		<li>
+			<a href="javascript:pageSubmit(10)">10</a>
+		</li>
+		<li class="nextpage">
+			<a href="javascript:pageSubmit(2)" title="下一页">下一页</a>
+		</li>
+	</ul>
+</div>

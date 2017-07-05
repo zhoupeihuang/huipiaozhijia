@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/MF.css" />
+		<link rel="stylesheet" type="text/css" href="css/ZP.css" />
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<!--弹出层的样式以及JS-->
+		<link rel="stylesheet" href="css/showBo.css" />
+		<script src="js/showBo.js" type="text/javascript" charset="utf-8"></script>
+		<!--弹出层的样式以及JS-->
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+		<style>
+			<div> </div>
+		</style>
+	</head>
+
+	<body>
+		<div id="xgmm" style="width: 150px; height: 20px; line-height: 20px; color: #111; cursor: pointer; text-align: center; background-color: #ccc; border: 1px solid #999;">
+			修改密码
+		</div>
+		<div id="xgjymm" style="width: 150px; height: 20px; margin-top: 5px; line-height: 20px; color: #111; cursor: pointer; text-align: center; background-color: #ccc; border: 1px solid #999;">
+			修改交易密码
+		</div>
+		<div id="xgsj" style="width: 150px; height: 20px; margin-top: 5px;  line-height: 20px; color: #111; cursor: pointer; text-align: center; background-color: #ccc; border: 1px solid #999;">
+			修改手机
+		</div>
+		<!-------修改密码----------->
+		<div class="scPop">
+			<div class="wpb-line cf">
+				<div class="wpbl-label">旧密码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="请输入您的旧密码" />
+					</div>
+					<div class="wpblb-note">
+						<i class="failIcon"></i>旧密码输入错误！
+					</div>
+				</div>
+			</div>
+
+			<div class="wpb-line cf">
+				<div class="wpbl-label">新密码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input wpblb-input-red">
+						<input type="text" placeholder="请输入您的新密码" />
+						<div class="succIconBig"></div>
+					</div>
+					<div class="wpblb-note">
+						<i class="failIcon"></i>新密码是字母、数字和下划线
+					</div>
+				</div>
+			</div>
+			<div class="wpb-line cf">
+				<div class="wpbl-label">确认新密码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="请确认输入您的新密码" />
+					</div>
+					<div class="wpblb-note">
+						<i class="failIcon"></i>两次输入的密码不一致！
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-------修改密码成功----------->
+		<div class="scPop">
+			<div class="errorPop"><img src="images/account/zpicon10.png" />设置成功</div>
+			<div class="wpb-line cf">
+				<div class="wpbl-label">旧密码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="********" />
+						<div class="succIconBig"></div>
+					</div>
+					<div class="wpblb-note">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="wpb-line cf">
+				<div class="wpbl-label">新密码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input wpblb-input-red">
+						<input type="text" placeholder="********" />
+						<div class="succIconBig"></div>
+					</div>
+					<div class="wpblb-note">
+
+					</div>
+				</div>
+			</div>
+			<div class="wpb-line cf">
+				<div class="wpbl-label">确认新密码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="********" />
+						<div class="succIconBig"></div>
+					</div>
+					<div class="wpblb-note">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------修改交易密码----------->
+		<div class="scPop">
+			<div class="errorPop"><img src="images/account/zpicon9.png" />验证码验证失败，请填写正确信息</div>
+			<div class="wpb-line cf">
+				<div class="wpbl-label">交易密码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="输入交易密码" />
+					</div>
+					<div class="wpblb-note">
+						<i class="failIcon"></i>交易密码只能六位数！
+					</div>
+				</div>
+			</div>
+
+			<div class="wpb-line cf">
+				<div class="wpbl-label">确认交易密码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input wpblb-input-red">
+						<input type="text" placeholder="输入交易密码" />
+						<div class="succIconBig"></div>
+					</div>
+					<div class="wpblb-note">
+						<i class="failIcon"></i>在此输入不一致！
+					</div>
+				</div>
+			</div>
+			<div class="wpb-line cf">
+				<div class="wpbl-label">手机验证码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="请输入手机验证码" />
+						<div class="wpblbi-get grayBgBt">获取验证码</div>
+					</div>
+					<div class="wpblb-note">
+						<p>我们向 13918139620 发送了手机验证码 请输入收到的验证码
+							<a href="#">收不到手机验证码?</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-------修改手机----------->
+		<div class="scPop">
+			<div align="center"><img src="images/account/xgsj1.png" /></div>
+			<div class="wpb-line cf mt20">
+				<div class="wpbl-label">原手机</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="15221606758" />
+					</div>
+					<div class="wpblb-note">
+
+					</div>
+				</div>
+			</div>
+			<div class="wpb-line cf">
+				<div class="wpbl-label">手机验证码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="15221606758" />
+						<div class="wpblbi-get grayBgBt">获取验证码</div>
+					</div>
+					<div class="wpblb-note">
+						<p>我们向 13918139620 发送了手机验证码 请输入收到的验证码
+							<a href="#">收不到手机验证码?</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-------新手机----------->
+		<div class="scPop">
+			<div align="center"><img src="images/account/xgsj2.png" /></div>
+			<div class="wpb-line cf mt20">
+				<div class="wpbl-label">新手机</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="15221606758"/>
+					</div>
+				</div>
+			</div>
+			<div class="wpb-line cf mt20">
+				<div class="wpbl-label">
+				</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input wyz" id="captcha_div" style="border: none;height: 38px; width: 200px;" >
+
+					</div>
+					<div class="wpblb-note">
+
+					</div>
+				</div>
+			</div>
+			<div class="wpb-line cf">
+				<div class="wpbl-label">手机验证码</div>
+				<div class="wpbl-body">
+					<div class="wpblb-input">
+						<input type="text" placeholder="15221606758" />
+						<div class="wpblb-input" id="captcha_div" style="border: none;height: 38px;">
+
+						</div>
+						<div class="wpblbi-get grayBgBt">获取验证码</div>
+					</div>
+					<div class="wpblb-note">
+						<i class="failIcon"></i>手机号码或验证码错误，请重新输入
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------修改手机成功----------->
+		<div class="scPop">
+			<div align="center"><img src="images/account/xgsj3.png" /></div>
+			<h2>您已成功修改手机！</h2>
+		</div>
+		<script src="http://c.dun.163yun.com/js/c.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//弹出层修改密码的JS
+				$("#xgmm").click(function() {
+						//第一个是文本 第二个是标题，标题可以为空,第三个是按钮，空就是没有，第四个是时间
+						Showbo.Msg.alert('<div class="scPop"><div class="wpb-line cf"><div class="wpbl-label">旧密码</div><div class="wpbl-body"><div class="wpblb-input"><input type="text" placeholder="请输入您的旧密码" /></div><div class="wpblb-note"><i class="failIcon"></i>旧密码输入错误！</div></div></div><div class="wpb-line cf"><div class="wpbl-label">新密码</div><div class="wpbl-body"><div class="wpblb-input wpblb-input-red"><input type="text" placeholder="请输入您的新密码" /><div class="succIconBig"></div></div><div class="wpblb-note"><i class="failIcon"></i>新密码是字母、数字和下划线</div></div></div><div class="wpb-line cf"><div class="wpbl-label">确认新密码</div><div class="wpbl-body"><div class="wpblb-input"><input type="text" placeholder="请输入您的新密码" /></div><div class="wpblb-note"><i class="failIcon"></i>两次输入的密码不一致！</div></div></div></div>', '修改密码', '确定', 1e5);
+
+					})
+					//弹出层修改交易密码的JS
+				$("#xgjymm").click(function() {
+						//第一个是文本 第二个是标题，标题可以为空,第三个是按钮，空就是没有，第四个是时间
+						Showbo.Msg.alert('<div class="scPop"><div class="errorPop"><img src="images/account/zpicon9.png" />验证码验证失败，请填写正确信息</div><div class="wpb-line cf"><div class="wpbl-label">交易密码</div><div class="wpbl-body"><div class="wpblb-input"><input type="text" placeholder="输入交易密码" /></div><div class="wpblb-note"> <i class="failIcon"></i>交易密码只能六位数！ </div></div></div><div class="wpb-line cf"><div class="wpbl-label">确认交易密码</div><div class="wpbl-body"><div class="wpblb-input wpblb-input-red"><input type="text" placeholder="输入交易密码" /><div class="succIconBig"></div></div><div class="wpblb-note"> <i class="failIcon"></i>在此输入不一致！ </div></div></div><div class="wpb-line cf"><div class="wpbl-label">手机验证码</div><div class="wpbl-body"><div class="wpblb-input"><input type="text"placeholder="请输入手机验证码"/><div class="wpblbi-get grayBgBt">获取验证码</div></div><div class="wpblb-note"><p>我们向 13918139620 发送了手机验证码请输入收到的验证码 <a href="#">收不到手机验证码?</a></p></div></div></div></div>', '交易密码设置', '确定', 1e5);
+
+					})
+					//弹出层修改手机的JS	
+				$("#xgsj").click(function() {
+						//第一个是文本 第二个是标题，标题可以为空,第三个是按钮，空就是没有，第四个是时间
+						Showbo.Msg.alert('<div class="scPop"><div align="center"><img src="images/account/xgsj1.png"/></div><div class="wpb-line cf mt20"><div class="wpbl-label">原手机</div><div class="wpbl-body"><div class="wpblb-input"><input type="text" placeholder="15221606758" /></div><div class="wpblb-note"></div></div></div><div class="wpb-line cf"><div class="wpbl-label">手机验证码</div><div class="wpbl-body"><div class="wpblb-input">	<input type="text"  placeholder="15221606758"/><div class="wpblbi-get grayBgBt">获取验证码</div></div><div class="wpblb-note"><p>我们向 13918139620 发送了手机验证码请输入收到的验证码 <a href="#">收不到手机验证码?</a></p></div></div></div></div>', '修改手机', '确定', 1e5);
+						//第一个是文本 第二个是标题，标题可以为空,第三个是按钮，空就是没有，
+						//						Showbo.Msg.confirm('文本 !', '标题', '确定', '取消', function(flag) {
+						//				              if(flag == 'yes') {
+						//				                console.log("yes")
+						//				              } else if(flag == 'no') {
+						//				                console.log("no")
+						//				              }
+						//				            });
+					})
+					//关闭提示消息
+					//				$(".errorPop img").click(function() {
+					//					$(this).parent().hide();
+					//				});
+				$("body").delegate(".errorPop img", "click", function() {
+					$(this).parent().hide();
+				});
+
+				// 验证码组件初始化
+				var opts = {
+					"element": "captcha_div", // 可以是验证码容器id，也可以是HTMLElement
+					"captchaId": "d02cef83fa0d4e6fad71fea628a430bf", // 这里填入申请到的验证码id
+					"width": 264, // 验证码组件显示宽度
+					"verifyCallback": function(ret) { // 用户只要有拖动/点击，就会触发这个回调
+						if(ret['value']) {
+							// true:验证通过 false:验证失败
+							// $("#gainMessage").removeAttr("disabled"); 
+							$("#quickLogin").removeAttr("disabled"); // 用户完成拖动之后再启用提交按钮
+							$("#successInfo").html('<i class="isucInfo"></i>验证成功');
+							$("#smscodeShow").html("");
+							$("#smscodeframe").removeClass("lb02").addClass("lb01");
+						}
+					}
+				};
+				var ins = new NECaptcha(opts);
+
+			});
+		</script>
+	</body>
+
+</html>

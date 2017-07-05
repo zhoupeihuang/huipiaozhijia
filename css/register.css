@@ -136,6 +136,10 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.textDefyzmGray{
+	background-color: #b8b8b8;
+	color: #fff;
+}
   .errorL {
     height: 20px;
     width: 320px;
@@ -175,6 +179,10 @@
     padding-left: 18px;
     font-size: 12px;
     color: #ccc;
+}
+.lmbMS3::-moz-selection {
+background:#fff !important; 
+color:#ccc;
 }
 .lmbMS3::selection {
 background:#fff !important; 
@@ -386,7 +394,7 @@ color:#ccc;
 	height: 30px;
 	line-height: 30px;
 	color:#df4d46;
-	font-size: 14px;
+	font-size: 14px;	
 }
 .wpblb-note2{
 	height: 30px;
@@ -480,8 +488,8 @@ color:#ccc;
 }
 .wpblb-input .succIconBig{
 	position: absolute;
-	top:7px;
-	right:-46px;
+	top:11px;
+	right:-26px;
 	width:26px;
 	height: 26px;
 	background:url(../images/succIcon.big.png) no-repeat;

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ZP.css"/>
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="mainbgs">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox cf mt20 mb20">
+				@@include("../src/myAccountLeftNav.html")
+				<div class="rightContent">
+					<div class="atitle cf">
+						<div class="atitle-text">我是卖方</div>
+					</div>
+					<div class="baseTit">
+						我的电票交易订单
+					</div>
+					<ul class="sellerNav">
+						<li class="slActive">
+							<div>全部</div>
+						</li>
+						<li>
+							<div>待付款<span>1</span></div>
+						</li>
+						<li>
+							<div>待背书<span>1</span></div>
+						</li>
+						<li>
+							<div>待签收<span>1</span></div>
+						</li>
+						<li>
+							<div>风控中<span>1</span></div>
+						</li>
+						<li>
+							<div>交易成功<span>1</span></div>
+						</li>
+						<li>
+							<div>交易失败</div>
+						</li>
+					</ul>
+					<ul class="sellerTable">
+						<li class="slList1"><span>交易订单号 ：1201704262915</span><span>创建时间 ：2017-04-26  14:23:02</span><b>操作人：liyu111222(李煜)</b></li>
+						<li class="slList2">
+							<span class="swd1">
+								<em>重庆农村商业银行股份有限公司江北支行</em><b>待付款</b>
+							</span>
+							<span class="swd2">
+								银电 无
+							</span>
+							<span class="swd3">
+								票据类型
+							</span>
+							<span class="swd4 s4k">
+								300000元
+							</span>
+							<span class="swd5 s4k">
+								票据金额
+							</span>
+							<span class="swd6 s6k">2017-07-24</span>
+							<span class="swd7 s6k">汇票到期日</span>
+							<span class="swd8 s8k">
+								89天
+							</span>
+							<span class="swd9 s8k">剩余期限</span>
+							<!--<span class="swd10">5家</span>
+							<span class="swd11">机构报价数</span>-->
+							<input type="button" value="查看票据详情" class="slbt1" />
+						</li>
+						<li class="slList3">
+							<span>询价金额 ：280000 元 (约合利率 ：22.47%)</span>
+							<span>实需支付金额 ：280000元 (含 0元手续费)</span>
+							<span>询价时间 ：2017-05-05 14:52:56</span>
+						</li>
+					</ul>
+					<ul class="sellerTable">
+						<li class="slList1"><span>交易订单号 ：1201704262915</span><span>创建时间 ：2017-04-26  14:23:02</span><b>操作人：liyu111222(李煜)</b></li>
+						<li class="slList2">
+							<span class="swd1">
+								<em>重庆农村商业银行股份有限公司江北支行</em><b>待背书</b>
+							</span>
+							<span class="swd2">
+								银电 无
+							</span>
+							<span class="swd3">
+								票据类型
+							</span>
+						    <span class="swd4 s4k">
+								300000元
+							</span>
+							<span class="swd5 s4k">
+								票据金额
+							</span>
+							<span class="swd6 s6k">2017-07-24</span>
+							<span class="swd7 s6k">汇票到期日</span>
+							<span class="swd8 s8k">
+								89天
+							</span>
+							<span class="swd9 s8k">剩余期限</span>
+							<!--<span class="swd10">5家</span>
+							<span class="swd11">机构报价数</span>-->
+							<span class="swd12"><img src="images/account/zpicon8.png"/>背书倒计时 29:36</span>
+							<input type="button" value="查看票据详情" class="slbt1" />
+							<input type="button" value="确认背书成功" class="slbt2"/>
+						</li>
+						<li class="slList3">
+							<span>询价金额 ：280000 元 (约合利率 ：22.47%)</span>
+							<span>实需支付金额 ：280000元 (含 0元手续费)</span>
+							<span>询价时间 ：2017-05-05 14:52:56</span>
+						</li>
+					</ul>
+					<ul class="sellerTable">
+						<li class="slList1"><span>交易订单号 ：1201704262915</span><span>创建时间 ：2017-04-26  14:23:02</span><b>操作人：liyu111222(李煜)</b></li>
+						<li class="slList2">
+							<span class="swd1">
+								<em>重庆农村商业银行股份有限公司江北支行</em><b>风控中</b>
+							</span>
+							<span class="swd2">
+								银电 无
+							</span>
+							<span class="swd3">
+								票据类型
+							</span>
+							<span class="swd4 s4k">
+								300000元
+							</span>
+							<span class="swd5 s4k">
+								票据金额
+							</span>
+							<span class="swd6 s6k">2017-07-24</span>
+							<span class="swd7 s6k">汇票到期日</span>
+							<span class="swd8 s8k">
+								89天
+							</span>
+							<span class="swd9 s8k">剩余期限</span>
+							<!--<span class="swd10">5家</span>
+							<span class="swd11">机构报价数</span>-->
+							<input type="button" value="查看票据详情" class="slbt1" />
+							<input type="button" value="确认交易成功" class="slbt2"/>
+						</li>
+						<li class="slList3">
+							<span>询价金额 ：280000 元 (约合利率 ：22.47%)</span>
+							<span>实需支付金额 ：280000元 (含 0元手续费)</span>
+							<span>询价时间 ：2017-05-05 14:52:56</span>
+						</li>
+					</ul>
+				@@include("../src/paging.html") 
+				</div>
+			</div>
+		</section>
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+
+</html>

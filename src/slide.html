@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<!--正文部分-->
-			<div class="mainbox cf pt20">
+		<div class="mainbox cf pt20 indexbox">
 			<div class="slideLeftBox">
 				<div class="slideleftTitle">
 					<p class="bigT">汇票</p>
@@ -70,11 +70,31 @@
 			<div class="slideRightBox">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="images/1.jpg" /></div>
-						<div class="swiper-slide"><img src="images/2.jpg" /></div>
-						<div class="swiper-slide"><img src="images/3.jpg" /></div>
-						<div class="swiper-slide"><img src="images/4.jpg" /></div>
-						<div class="swiper-slide"><img src="images/5.jpg" /></div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/1.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/2.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/3.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/4.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/5.jpg" />
+							</a>
+						</div>
 					</div>
 					<!-- Add Pagination -->
 					<div class="swiper-pagination"></div>
@@ -86,7 +106,7 @@
 		</div>
 
 	</div>
-	<link rel="stylesheet" type="text/css" href="css/wave.css"/>
+	<link rel="stylesheet" type="text/css" href="css/wave.css" />
 	<script src="js/wave.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<script src="js/swiper.min.js"></script>
@@ -174,10 +194,12 @@
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
 			autoplay: 1800,
+			autoplayDisableOnInteraction: false,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev',
 			parallax: true,
 			speed: 600,
+			loop: true
 		});
 		/*公告的*/
 		var swiper = new Swiper('.swiper-container2', {

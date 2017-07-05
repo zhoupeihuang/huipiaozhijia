@@ -31,7 +31,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="bgf7">
+	<body class="mainbgs">
 		@@include("../src/navhead.html") 
 		@@include("../src/header.html") 
 		<!--内部内容-->
@@ -72,6 +72,14 @@
 				</div>
 			</div>
 		</section>
+		<script type="text/javascript">
+		$(function(){
+			$(".BankAccountTip i").click(function(){
+				$(this).parent().hide();	
+			});		
+		});
+
+		</script>
 		<!--内部内容-->
 		@@include("../src/footer.html") 
 	</body>

@@ -38,13 +38,16 @@
 						<a href="">新手指引</a>
 					</li>
 					<li>
-						<a href="">安全保障</a>
+						<a href="securityCenter.html">安全保障</a>
 					</li>
 					<li>
-						<a href="">登录</a>
+						<a href="HelpCenter.html">帮助中心</a>
 					</li>
 					<li>
-						<a href="">注册</a>
+						<a href="login.html">登录</a>
+					</li>
+					<li>
+						<a href="registera.html">注册</a>
 					</li>
 				</ul>
 			</div>
@@ -63,16 +66,16 @@
 						<a href="index.html" class="rightHBActive">首页</a>
 					</li>
 					<li>
-						<a href="activity.html">我要贴现</a>
+						<a href="sellerPublish.html">我要贴现</a>
 					</li>
 					<li>
-						<a href="riskTip.html">我要收票</a>
+						<a href="invoiceList.html">我要收票</a>
 					</li>
 					<li>
-						<a href="notice.html">票据资讯</a>
+						<a href="#">票据资讯</a>
 					</li>
 					<li class="rightHBeji">
-						<a href="notice.html" class="userIcon ">
+						<a href="MyAccount.html" class="userIcon ">
 							我的账户
 						</a>
 					</li>
@@ -119,7 +122,7 @@
 			</div>
 		</div>
 		<!--正文部分-->
-			<div class="mainbox cf pt20">
+		<div class="mainbox cf pt20 indexbox">
 			<div class="slideLeftBox">
 				<div class="slideleftTitle">
 					<p class="bigT">汇票</p>
@@ -163,11 +166,31 @@
 			<div class="slideRightBox">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="images/1.jpg" /></div>
-						<div class="swiper-slide"><img src="images/2.jpg" /></div>
-						<div class="swiper-slide"><img src="images/3.jpg" /></div>
-						<div class="swiper-slide"><img src="images/4.jpg" /></div>
-						<div class="swiper-slide"><img src="images/5.jpg" /></div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/1.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/2.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/3.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/4.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="www.baidu.com" target="_blank">
+								<img src="images/5.jpg" />
+							</a>
+						</div>
 					</div>
 					<!-- Add Pagination -->
 					<div class="swiper-pagination"></div>
@@ -179,7 +202,7 @@
 		</div>
 
 	</div>
-	<link rel="stylesheet" type="text/css" href="css/wave.css"/>
+	<link rel="stylesheet" type="text/css" href="css/wave.css" />
 	<script src="js/wave.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<script src="js/swiper.min.js"></script>
@@ -267,10 +290,12 @@
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
 			autoplay: 1800,
+			autoplayDisableOnInteraction: false,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev',
 			parallax: true,
 			speed: 600,
+			loop: true
 		});
 		/*公告的*/
 		var swiper = new Swiper('.swiper-container2', {
@@ -280,6 +305,30 @@
 		});
 	</script>
 </section> 
+		<div class="swiper-container3">
+			<div class="lb">网站公告</div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#">1关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+				<div class="swiper-slide">
+					<a href="#">2关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+				<div class="swiper-slide">
+					<a href="#">3关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+				<div class="swiper-slide">
+					<a href="#">1关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+				<div class="swiper-slide">
+					<a href="#">1关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+			</div>
+		</div>
+<script>
+			
+				/*公司公告的*/
+				var swiper = new Swiper('.swiper-container3', {
+//					slidesPerView: 5,
+					direction: 'vertical',
+					autoplay: 1800
+				});
+			</script>
 		<div class="goodnessBox cf">
 	<div class="goodnessItem">
 		<a class="goodnessIcon goodnessIcon1"></a>
@@ -335,8 +384,8 @@
 				<span class="wd10">票面金额</span>
 				<span class="wd11">2017-10-11</span>
 				<span class="wd12">166天</span>
-				<span class="wd13">浏览数</span>
-				<span class="wd14 shengluehao">21</span>
+				<span class="wd13">关注度</span>
+				<span class="wd14"><i style="width: 20%;"></i></span>
 				<span class="wd15"></span>
 				<span class="wd16"></span>
 				<span class="wd17"></span>
@@ -355,8 +404,8 @@
 				<span class="wd10">票面金额</span>
 				<span class="wd11">2017-10-11</span>
 				<span class="wd12">166天</span>
-				<span class="wd13">浏览数</span>
-				<span class="wd14 shengluehao">10</span>
+				<span class="wd13">关注度</span>
+				<span class="wd14"><i style="width: 40%;"></i></span>
 				<span class="wd15"></span>
 				<span class="wd16"></span>
 				<span class="wd17"></span>
@@ -375,8 +424,8 @@
 				<span class="wd10">票面金额</span>
 				<span class="wd11">2017-10-11</span>
 				<span class="wd12">166天</span>
-				<span class="wd13">浏览数</span>
-				<span class="wd14 shengluehao">3</span>
+				<span class="wd13">关注度</span>
+				<span class="wd14"><i style="width: 60%;"></i></span>
 				<span class="wd15"></span>
 				<span class="wd16"></span>
 				<span class="wd17"></span>
@@ -395,8 +444,8 @@
 				<span class="wd10">票面金额</span>
 				<span class="wd11">2017-10-11</span>
 				<span class="wd12">166天</span>
-				<span class="wd13">浏览数</span>
-				<span class="wd14 shengluehao">3</span>
+				<span class="wd13">关注度</span>
+				<span class="wd14"><i style="width:100%;"></i></span>
 				<span class="wd15"></span>
 				<span class="wd16"></span>
 				<span class="wd17"></span>
@@ -417,8 +466,8 @@
 				<span class="wd10">票面金额</span>
 				<span class="wd11">2017-10-11</span>
 				<span class="wd12">166天</span>
-				<span class="wd13">浏览数</span>
-				<span class="wd14 shengluehao">3</span>
+				<span class="wd13">关注度</span>
+				<span class="wd14"><i style="width: 60%;"></i></span>
 				<span class="wd15"></span>
 				<span class="wd16"></span>
 				<span class="wd17"></span>
@@ -437,8 +486,8 @@
 				<span class="wd10">票面金额</span>
 				<span class="wd11">2017-10-11</span>
 				<span class="wd12">166天</span>
-				<span class="wd13">浏览数</span>
-				<span class="wd14 shengluehao">3</span>
+				<span class="wd13">关注度</span>
+				<span class="wd14"><i style="width: 20%;"></i></span>
 				<span class="wd15"></span>
 				<span class="wd16"></span>
 				<span class="wd17"></span>
@@ -457,8 +506,8 @@
 				<span class="wd10">票面金额</span>
 				<span class="wd11">2017-10-11</span>
 				<span class="wd12">166天</span>
-				<span class="wd13">浏览数</span>
-				<span class="wd14 shengluehao">13</span>
+				<span class="wd13">关注度</span>
+				<span class="wd14"><i style="width: 40%;"></i></span>
 				<span class="wd15"></span>
 				<span class="wd16"></span>
 				<span class="wd17"></span>
@@ -477,8 +526,8 @@
 				<span class="wd10">票面金额</span>
 				<span class="wd11">2017-10-11</span>
 				<span class="wd12">166天</span>
-				<span class="wd13">浏览数</span>
-				<span class="wd14 shengluehao">13</span>
+				<span class="wd13">关注度</span>
+				<span class="wd14"><i style="width: 60%;"></i></span>
 				<span class="wd15"></span>
 				<span class="wd16"></span>
 				<span class="wd17"></span>
@@ -509,15 +558,15 @@
 				<span class="wd1 shengluehao">中国民11生银行股份有限公司</span>
 				<span class="wd2 wd2_1">纸质银票</span>
 				<span class="wd3 shengluehao">银电 无</span>
-				<span class="wd4">2017-10-11</span>
-				<span class="wd5">汇票到期日</span>				
+				<span class="wd4">票据类型</span>
+				<span class="wd5">2017-10-11</span>				
 				<span class="wd19">北京-上海</span>
 				<span class="wd20">所在地区</span>
 				<span class="wd21">3</span>
 				<span class="wd22">报价数</span>
-				<span class="wd23">3</span>
-				<span class="wd24">浏览数</span>
-				<span class="wd6">剩余天数</span>
+				<span class="wd23"><i style="width: 20%;"></i></span>
+				<span class="wd24">关注度</span>
+				<span class="wd6">汇票到期日</span>
 				<span class="wd9">100.00万</span>
 				<span class="wd10">票面金额</span>
 				<span class="wd11">188天</span>
@@ -528,18 +577,18 @@
 				<input type="button" value="立即报价" class="wd18 wd18_1"/>
 			</div>
 			<div class="dfProductList">
-				<span class="wd1 shengluehao">中国民生银行股份有限公司</span>
+				<span class="wd1 shengluehao">中国民11生银行股份有限公司</span>
 				<span class="wd2 wd2_1">纸质银票</span>
 				<span class="wd3 shengluehao">银电 无</span>
-				<span class="wd4">2017-10-11</span>
-				<span class="wd5">汇票到期日</span>				
+				<span class="wd4">票据类型</span>
+				<span class="wd5">2017-10-11</span>				
 				<span class="wd19">北京-上海</span>
 				<span class="wd20">所在地区</span>
 				<span class="wd21">3</span>
 				<span class="wd22">报价数</span>
-				<span class="wd23">3</span>
-				<span class="wd24">浏览数</span>
-				<span class="wd6">剩余天数</span>
+				<span class="wd23"><i style="width: 20%;"></i></span>
+				<span class="wd24">关注度</span>
+				<span class="wd6">汇票到期日</span>
 				<span class="wd9">100.00万</span>
 				<span class="wd10">票面金额</span>
 				<span class="wd11">188天</span>
@@ -550,18 +599,18 @@
 				<input type="button" value="立即报价" class="wd18 wd18_1"/>
 			</div>
 			<div class="dfProductList">
-				<span class="wd1 shengluehao">中国民生银行股份有限公司</span>
+				<span class="wd1 shengluehao">中国民11生银行股份有限公司</span>
 				<span class="wd2 wd2_1">纸质银票</span>
 				<span class="wd3 shengluehao">银电 无</span>
-				<span class="wd4">2017-10-11</span>
-				<span class="wd5">汇票到期日</span>				
+				<span class="wd4">票据类型</span>
+				<span class="wd5">2017-10-11</span>				
 				<span class="wd19">北京-上海</span>
 				<span class="wd20">所在地区</span>
 				<span class="wd21">3</span>
 				<span class="wd22">报价数</span>
-				<span class="wd23">3</span>
-				<span class="wd24">浏览数</span>
-				<span class="wd6">剩余天数</span>
+				<span class="wd23"><i style="width: 20%;"></i></span>
+				<span class="wd24">关注度</span>
+				<span class="wd6">汇票到期日</span>
 				<span class="wd9">100.00万</span>
 				<span class="wd10">票面金额</span>
 				<span class="wd11">188天</span>
@@ -572,18 +621,18 @@
 				<input type="button" value="立即报价" class="wd18 wd18_1"/>
 			</div>
 			<div class="dfProductList">
-				<span class="wd1 shengluehao">中国民生银行股份有限公司</span>
+				<span class="wd1 shengluehao">中国民11生银行股份有限公司</span>
 				<span class="wd2 wd2_1">纸质银票</span>
 				<span class="wd3 shengluehao">银电 无</span>
-				<span class="wd4">2017-10-11</span>
-				<span class="wd5">汇票到期日</span>				
+				<span class="wd4">票据类型</span>
+				<span class="wd5">2017-10-11</span>				
 				<span class="wd19">北京-上海</span>
 				<span class="wd20">所在地区</span>
 				<span class="wd21">3</span>
 				<span class="wd22">报价数</span>
-				<span class="wd23">13</span>
-				<span class="wd24">浏览数</span>
-				<span class="wd6">剩余天数</span>
+				<span class="wd23"><i style="width: 20%;"></i></span>
+				<span class="wd24">关注度</span>
+				<span class="wd6">汇票到期日</span>
 				<span class="wd9">100.00万</span>
 				<span class="wd10">票面金额</span>
 				<span class="wd11">188天</span>
@@ -599,15 +648,15 @@
 				<span class="wd1 shengluehao">中国民生银行股份有限公司</span>
 				<span class="wd2 wd2_1">纸质商票</span>
 				<span class="wd3 shengluehao">银电 无</span>
-				<span class="wd4">2017-10-11</span>
-				<span class="wd5">汇票到期日</span>				
+				<span class="wd4">票据类型</span>
+				<span class="wd5">2017-10-11</span>				
 				<span class="wd19">北京-上海</span>
 				<span class="wd20">所在地区</span>
 				<span class="wd21">3</span>
 				<span class="wd22">报价数</span>
-				<span class="wd23">3</span>
-				<span class="wd24">浏览数</span>
-				<span class="wd6">剩余天数</span>
+				<span class="wd23"><i style="width: 20%;"></i></span>
+				<span class="wd24">关注度</span>
+				<span class="wd6">汇票到期日</span>
 				<span class="wd9">100.00万</span>
 				<span class="wd10">票面金额</span>
 				<span class="wd11">188天</span>
@@ -621,15 +670,15 @@
 				<span class="wd1 shengluehao">中国民生银行股份有限公司</span>
 				<span class="wd2 wd2_1">纸质商票</span>
 				<span class="wd3 shengluehao">银电 无</span>
-				<span class="wd4">2017-10-11</span>
-				<span class="wd5">汇票到期日</span>				
+			<span class="wd4">票据类型</span>
+				<span class="wd5">2017-10-11</span>				
 				<span class="wd19">北京-上海</span>
 				<span class="wd20">所在地区</span>
-				<span class="wd21">13</span>
+				<span class="wd21">3</span>
 				<span class="wd22">报价数</span>
-				<span class="wd23">3</span>
-				<span class="wd24">浏览数</span>
-				<span class="wd6">剩余天数</span>
+				<span class="wd23"><i style="width: 20%;"></i></span>
+				<span class="wd24">关注度</span>
+				<span class="wd6">汇票到期日</span>
 				<span class="wd9">100.00万</span>
 				<span class="wd10">票面金额</span>
 				<span class="wd11">188天</span>
@@ -643,15 +692,15 @@
 				<span class="wd1 shengluehao">中国民生银行股份有限公司</span>
 				<span class="wd2 wd2_1">纸质商票</span>
 				<span class="wd3 shengluehao">银电 无</span>
-				<span class="wd4">2017-10-11</span>
-				<span class="wd5">汇票到期日</span>				
+				<span class="wd4">票据类型</span>
+				<span class="wd5">2017-10-11</span>				
 				<span class="wd19">北京-上海</span>
 				<span class="wd20">所在地区</span>
 				<span class="wd21">3</span>
 				<span class="wd22">报价数</span>
-				<span class="wd23">3</span>
-				<span class="wd24">浏览数</span>
-				<span class="wd6">剩余天数</span>
+				<span class="wd23"><i style="width: 20%;"></i></span>
+				<span class="wd24">关注度</span>
+				<span class="wd6">汇票到期日</span>
 				<span class="wd9">100.00万</span>
 				<span class="wd10">票面金额</span>
 				<span class="wd11">188天</span>
@@ -665,15 +714,15 @@
 				<span class="wd1 shengluehao">中国民生银行股份有限公司</span>
 				<span class="wd2 wd2_1">纸质商票</span>
 				<span class="wd3 shengluehao">银电 无</span>
-				<span class="wd4">2017-10-11</span>
-				<span class="wd5">汇票到期日</span>				
+				<span class="wd4">票据类型</span>
+				<span class="wd5">2017-10-11</span>				
 				<span class="wd19">北京-上海</span>
 				<span class="wd20">所在地区</span>
 				<span class="wd21">3</span>
 				<span class="wd22">报价数</span>
-				<span class="wd23">3</span>
-				<span class="wd24">浏览数</span>
-				<span class="wd6">剩余天数</span>
+				<span class="wd23"><i style="width: 20%;"></i></span>
+				<span class="wd24">关注度</span>
+				<span class="wd6">汇票到期日</span>
 				<span class="wd9">100.00万</span>
 				<span class="wd10">票面金额</span>
 				<span class="wd11">188天</span>
@@ -699,6 +748,17 @@
 </script>
 		</section>
 		<!--内部内容-->
+		<section data-role="floatbox">
+	<div class="floatbox01">
+		<a class="fb-link-register" href="#"></a>
+		<a class="fb-link-calculator" href="#"></a>	
+		<a class="fb-link-service" href="#"></a>	
+		<a class="fb-link-public" href="#">
+			<img src="images/ewm.side.png"/>
+		</a>		
+		<a class="fb-link-top" href="#"></a>		
+	</div>
+</section> 				
 		<div class="cooperativeAgencyBox mt40">
 	<div class="cooperativeAgencyBoxInner">
 		<div class="cabiTitle">合作机构</div>
@@ -713,95 +773,56 @@
  		
 		<footer id="footer">
 <div class="footerBoxOuter">	
-	<div class="footerBox">
-		<div class="footerFirstBox cf">
+	<div class="footerBox cf">
 			<div class="footerWebsiteMap">
+				<div class="fbo2-renzhen cf">
+					<a></a>	<a></a>	<a></a>	<a></a>	<a></a>	
+				</div>		
 				<ul class="cf">
 					<li>
 						<div class="fwmTitle">
-							<a>关于XXX</a>
-						</div>
-						<div class="fwmList">
-							<a>关于我们</a>
-							<a>网站声明</a>
-							<a>加入我们</a>
-							<a>网站公告</a>							
+							<a>公司简介</a>
 						</div>
 					</li>
 					<li>
 						<div class="fwmTitle">
-							<a>帮助中心</a>
-						</div>
-						<div class="fwmList">
-							<a>账号管理</a>
-							<a>我是卖方</a>
-							<a>我是买方</a>
-							<a>常用知识</a>							
+							<a>新手指引</a>
 						</div>
 					</li>
 					<li>
 						<div class="fwmTitle">
 							<a>安全保障</a>
 						</div>
-						<div class="fwmList">
-							<a>资金安全</a>
-							<a>交易安全</a>	
-							<a>系统安全</a>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>帮助中心</a>
 						</div>
 					</li>
 					<li>
 						<div class="fwmTitle">
-							<a>媒体报道</a>
-						</div>
-						<div class="fwmList">
-							<a>资金安全</a>
-							<a>交易安全</a>						
+							<a>加入我们</a>
 						</div>
 					</li>
 					<li>
 						<div class="fwmTitle">
 							<a>联系我们</a>
 						</div>
-						<div class="fwmList">
-							<a>网站地图</a>
-							<a>联系我们</a>						
-						</div>
 					</li>					
 				</ul>
 			</div>
 			<div class="footerCustomService">
-				<div class="fcsPhone">
-					<div class="fcsPhone1">400-6609-655</div>
-					<div class="fcsPhone2">交易时间：上午8:00-下午16:30(工作日)</div>
-				</div>
-				<div class="fcsService">
-					<div>“QQ在线客服”或社区“客服中心”</div>
-					<div>关注“付融宝微服务”微信公众号联系客服</div>
-					<div>省互联网金融协会 投诉电话：025-58588436</div>
-					<div>邮箱地址：Jslmf@263.net</div>				
-				</div>				
+				<div class="fcst-time">交易时间：上午8:00 - 下午16:30（工作日）</div>				
+				<div class="fcst-phone">400-825-8800</div>
+				<div class="fcst-time">汇票之家微信公众号：汇票之家</div>
 			</div>
-		</div>
-		<div class="footerLastBox cf">
-			<div class="flbEwm">
-				<img src="images/ewm.png" />
-			</div>
-			<div class="flbCopyright">
-				<div class="flbca">
-					友情链接：
-					<a>网贷之家</a>｜<a>麦芽数据</a>｜<a>易钢在线</a>｜<a>锋鸟软件</a>
-				</div>
-				<div class="flbcb">© 2017 小财迷 91xcm.com 版权所有. 上海问财互联网金融信息服务有限公司. 沪ICP备16002215号.理财有风险 投资需谨慎 	</div>
-				<div class="flbcc">
-					<a></a>	<a></a>	<a></a>	<a></a>	<a></a>	<a></a>
-				</div>
-			</div>
-		</div>
-		<div class="footerLogoBox">
-			<img src="images/bottom-logo.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;汇票&nbsp;&nbsp;&nbsp;&nbsp;解手可及
-		</div>
 	</div>
 </div>
+<div class="footerBoxOuter2">	
+	<div class="footerBox">			
+		<div class="copyright">© 2017 小财迷 91xcm.com 版权所有. 上海问财互联网金融信息服务有限公司. 沪ICP备16002215号.理财有风险 投资需谨慎 	</div>
+	</div>
+</div>		
 </footer> 
 	</body>
 

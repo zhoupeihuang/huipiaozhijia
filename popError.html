@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+		<!--弹出层的样式以及JS-->
+		<link rel="stylesheet" href="css/showBo.css" />
+		<script src="js/showBo.js" type="text/javascript" charset="utf-8"></script>
+		<!--弹出层的样式以及JS-->
+	</head>
+	<body>
+		<input type="button" name="" id="xgmm" value="pop" />
+		<script>
+			 //弹出层修改密码的JS
+        $("#xgmm").click(function() {
+                
+            //Showbo.Msg.prompt：参数（输入框前的文字，输入框默认值，输入框id，回调函数）， 
+              var txt='<div class="scPop"><div class="wpb-line cf"><div class="wpbl-label">旧密码</div><div class="wpbl-body"><div class="wpblb-input"><input type="password" id="inputOldPwd" onBlur="checkOldPwd();" maxlength="20" placeholder="请输入您的旧密码" /><div id="oldSuccIcon" style="display:none" class="succIconBig"></div></div><div class="wpblb-note" id="divOldPwd"></div></div></div><div class="wpb-line cf"><div class="wpbl-label">新密码</div><div class="wpbl-body"><div class="wpblb-input"><input type="password" id="inputNewPwd" placeholder="请输入您的新密码" maxlength="20"  onBlur="checkPass();"/><div id="newSuccIcon" style="display:none" class="succIconBig"></div></div><div class="wpblb-note" id="passR"></div></div></div><div class="wpb-line cf"><div class="wpbl-label">确认新密码</div><div class="wpbl-body"><div class="wpblb-input"><input type="password" id="inputNewPwd2" maxlength="20" placeholder="请输入您的新密码" onBlur="checkCPass()"/><div id="newSuccIcon2" style="display:none" class="succIconBig"></div></div><div class="wpblb-note" id="cPassR"></div></div></div></div>';
+          
+            Showbo.Msg.confirm(txt, '修改密码', '确定','取消', function(flag) {
+                      if(flag == 'yes') {
+//                      return true;
+//						return false;
+                      } 
+                });
+
+        });
+//	$(function(){
+//		var flag = 'yes'
+//		  function (flag) {
+//                    if(flag == 'yes') {
+//                      return true;
+//                    } 
+//              }()
+//	})
+       
+		</script>
+	</body>
+</html>

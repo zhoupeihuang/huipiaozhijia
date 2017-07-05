@@ -31,7 +31,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="bgf7">
+	<body class="mainbgs">
 		@@include("../src/navhead.html") 
 		@@include("../src/header.html") 
 		<!--内部内容-->
@@ -59,10 +59,13 @@
 						</div>
 						<div class="cf-line cf">
 							<div class="cfl-label">营业执照图片</div>
-							<div class="cfl-body">
-								<div class="cflb-input" style="border: none;">
-									<div class="cflbi-upload">上传图片</div>
-									<input type="file"  class="cflbi-file"/>
+							<div class="cfl-body cf">
+								<div class="z_photo upimg-div clear">
+									<section class="z_file cf">
+										<div class="cflbi-upload">上传图片</div>											
+										<input type="file" name="picture[]"   class="file files1" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple="multiple">
+										<input type="hidden" name="pic_status" id="pic_status" value="0">
+									</section>
 								</div>
 								<div class="cflb-note">
 									
@@ -74,6 +77,21 @@
 				</div>
 			</div>
 		</section>
+		<aside class="mask works-mask">
+			<div class="mask-content">
+				<p class="del-p ">您确定要删除作品图片吗？</p>
+				<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+			</div>
+		</aside>			
+		<script src="./js/imgUp.js" type="text/javascript"></script>	
+		<script type="text/javascript">
+			$(function(){
+				//判断是否有文件上传
+				$(".files1").bind('change', function() {
+					$("#pic_status").val(1);
+				});
+			});
+		</script>
 		<!--内部内容-->
 		@@include("../src/footer.html") 
 	</body>

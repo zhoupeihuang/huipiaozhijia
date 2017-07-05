@@ -1,0 +1,439 @@
+/**********立即报价************/
+.quotationBoxs{
+	width:1200px;
+	margin:20px auto;
+}
+.quotationBox{
+	float:left;
+	background-color:white;
+	border:1px solid #b8b8b8;
+}
+.quotationBoxImage{
+	width:798px;
+	margin-right: 20px;
+}
+.quotationBoxTable{
+	width:378px;
+}
+.quotationBoxTitle{
+	height: 55px;
+	border-bottom:1px solid #b8b8b8;
+	line-height: 55px;
+	padding-left:20px;
+}
+.quotationBoxBodyTitle{
+	width:706px;
+	margin:0px auto;
+	border-bottom: 1px dashed #e8e8e8;
+}
+.quotationBoxBodyTitle span{
+	width:106px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	display: block;
+	margin:30px auto 20px auto;
+	background-color: #edaa53;
+	color: white;
+}
+.quotationBoxBodyImg{
+	margin:30px auto;
+	display: block;
+	width:706px;
+}
+.quotationBoxBody table{
+	width:360px;
+	margin:8px auto;
+	border-collapse: collapse;
+}
+.quotationBoxBody table th,
+.quotationBoxBody table td{
+	height: 40px;
+	text-align: left;
+}
+.quotationBoxBody table th{
+	border-bottom: 2px solid #dbdbdb;
+}
+.quotationBoxBody table td{
+	border-bottom: 1px dashed #e8e8e8;
+}
+.quotationBoxBody table tr.no-border td{
+	border-bottom: none;
+}
+.quotationBoxBody table td a{
+	color:#aa3c16;
+}
+.quotationTopHeader{
+	height: 380px;
+	background:url(../images/quotation/topheader.jpg) no-repeat;
+	background-position: center;
+}
+.quotationTopHeaderInner{
+	width:1200px;
+	margin: 0px auto;
+	position: relative;
+}
+.qthi-text{
+	width:1180px;
+	height: 340px;
+	background-color: white;
+	position: absolute;
+	top:20px;
+	left: 0px;
+}
+.qthit-title{
+	width:870px;
+	margin-left: 20px;
+	font-size: 18px;
+	color: #2e2e2e;
+	line-height: 78px;
+}
+.qthit-title span{
+	display: inline-block;
+	margin-bottom: -10px;
+	height: 36px;
+	width: 36px;
+	background:url(../images/quotation/dian.png) no-repeat;
+}
+.qthit-piaomian{
+	width:820px;
+	height: 83px;
+	background:url(../images/quotation/piaomian.jpg) no-repeat;
+	margin-top:10px;
+	margin-left:64px;
+	padding-top: 1px;
+}
+.qthit-piaomian table{
+	margin-top: 14px;
+	margin-left:20px;
+	margin-right: 20px;
+	width:780px;
+}
+.qthit-piaomian table th{
+	font-weight: normal;
+	text-align: left;
+	font-size: 14px;
+	color:#2e2e2e;
+	height: 24px;
+}
+.qthit-piaomian table td{
+	text-align: left;
+	font-size: 20px;
+	color:#2e2e2e;
+	font-weight: bold;
+	height: 30px;
+}
+.qthit-piaomian table td.qthit-red{
+	color:#dd514c;
+}
+.qthit-text{
+	margin-left:64px;
+	margin-top: 24px;
+}
+.qthit-text table{
+	
+}
+.qthit-text table th,
+.qthit-text table td{
+	font-size: 14px;
+	color: 5d5d5d;
+	height: 28px;
+	text-align: left;
+	font-weight: normal;
+}
+.qthit-text table th{
+	width:156px;
+}
+.qthit-text table td{
+	width:242px;
+}
+.qthi-form{
+	width:280px;
+	height: 360px;
+	background:url(../images/quotation/form.bg.png) no-repeat;
+	position: absolute;
+	top:30px;
+	right: 0px;
+}
+.qthif-top{
+	color: white;
+}
+.qthift-title{
+	font-size: 16px;
+	line-height: 18px;
+	margin-top:20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.qthift-numbers{
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+}
+.qthiftn-stars{
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+    width: 120px;
+    color: #858585;
+    margin-left: 20px;
+    background-image: url(../images/quotation/forstars.png);
+    background-position:left center;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+}
+.qthiftn-stars b {
+	text-align: left;
+    width: 62px;
+    height: 9px;
+    line-height: 9px;
+    display: inline-block;
+    background-image: url(../images/x4.png);
+    background-repeat: no-repeat;
+}
+.qthiftn-stars b  i {
+    display: inline-block;
+    height: 9px;
+    background-image: url(../images/x4_1.png);
+    background-repeat: no-repeat;
+}
+.qthiftn-institution{
+	display: inline-block;
+	width:14px;
+	height: 15px;
+	background:url(../images/quotation/institution.png) no-repeat;
+	margin-bottom: -3px;
+	margin-right: 4px;
+	margin-left:20px;
+}
+.qthif-body{
+	background-color:white;
+	width:260px;
+	border-radius: 3px;
+	margin:20px auto;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+.qthifb-login-desc{
+	margin-left:10px;
+	line-height: 53px;
+	color:#2e2e2e;
+	font-size: 14px;
+}
+.qthifb-login{
+	margin:0px 10px 20px 10px;
+	line-height: 46px;
+	height: 46px;
+	color:#aa3c16;
+	font-size: 16px;
+	display: block;
+	background-color: #f6dca0;
+	border:1px solid #edaa53;
+	text-align: center;
+	border-radius: 3px;
+}
+.qthifb-login:hover{
+	color:#aa3c16;
+}
+.qthifb-kaitong-desc{
+	margin-left:10px;
+	margin-top: 15px;
+	margin-right: 10px;
+	line-height: 22px;
+	color:#2e2e2e;
+	font-size: 14px;
+}
+.qthifb-kaitong{
+	margin:15px 10px 20px 10px;
+	line-height: 46px;
+	height: 46px;
+	color:#aa3c16;
+	font-size: 16px;
+	display: block;
+	background-color: #f6dca0;
+	border:1px solid #edaa53;
+	text-align: center;
+	border-radius: 3px;	
+}
+.qthifb-kaitong:hover{
+	color:#aa3c16;
+}
+.qthifb-modify-items{
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom: 1px dashed #dddddd;
+}
+.qthifb-modify-items div{
+	font-size: 14px;
+	color: #2e2e2e;
+	line-height: 24px;
+}
+.qthifbmi-amout{
+	margin-top: 14px;
+}
+.qthifbmi-percent{
+	margin-bottom: 11px;
+}
+.qthifb-pay{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.qthifbp-amount{
+	font-size: 16px;
+	color: #2e2e2e;
+	line-height: 26px;
+	margin-top: 8px;
+}
+.qthifbp-amount i{
+	color: #ff1919;
+	font-style: normal;
+}
+.qthifbp-fee{
+	font-size: 12px;
+	color: #5d5d5d;
+	line-height: 24px;
+}
+.qthifbp-fee a{
+	display: inline-block;
+	color:#aa3c16;
+	margin-left: 7px;
+}
+.qthifb-payed-time{
+	font-size: 12px;
+	line-height: 12px;
+	color: #5d5d5d;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+	margin-top: 10px;
+}
+.qthifb-modify-button{
+	margin:12px 10px 12px 10px;
+	line-height: 30px;
+	height: 30px;
+	width:238px;
+	color:#aa3c16;
+	font-size: 14px;
+	display: block;
+	background-color: #f6dca0;
+	border:1px solid #edaa53;
+	text-align: center;
+	border-radius: 3px;		
+}
+.qthifb-now-button{
+	margin:12px 10px 12px 10px;
+	line-height: 30px;
+	height: 30px;
+	width:238px;
+	color:#aa3c16;
+	font-size: 14px;
+	display: block;
+	background-color: #f6dca0;
+	border:1px solid #edaa53;
+	text-align: center;
+	border-radius: 3px;		
+}
+.qthifb-confirm-button{
+	margin:6px 10px 12px 10px;
+	line-height: 30px;
+	height: 30px;
+	width:238px;
+	color:#aa3c16;
+	font-size: 14px;
+	display: block;
+	background-color: #f6dca0;
+	border:1px solid #edaa53;
+	text-align: center;
+	border-radius: 3px;		
+}
+.confirmGray{
+	background-color: #aaaaaa;
+	border:1px solid #aaaaaa;
+	color: white;
+}
+.qthifb-label{
+	line-height: 32px;
+	margin:0px 10px;
+	font-size: 14px;
+	color: #2e2e2e;
+}
+.qthifb-input{
+	height: 28px;
+	margin:0px 10px;
+	border:1px solid #dbdbdb;
+	border-radius: 3px;
+	position: relative;
+}
+.qthifb-input input{
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+	width:200px;
+	margin-left:9px;
+	border: none;
+}
+.qthifb-input span{
+	font-size: 16px;
+	display: inline-block;
+}
+
+.boxmask{
+    -moz-opacity: 0.5;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    background-color: #000000;
+    z-index: 100;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height: 100%;
+}
+.boxSuccess{
+	width:267px;
+	border:4px solid #c2c2c2;
+	background-color: white;
+	text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left:-135px;	
+    z-index: 1001;
+}
+.boxSuccessIcon{
+	display: inline-block;
+	width:28px;
+	height: 28px;
+	background:url(../images/quotation/success.icon.png) no-repeat;
+	margin-bottom: -8px;
+	margin-right: 16px;
+}
+.boxSuccessText{
+	font-size: 16px;
+	color: #2e2e2e;
+	line-height: 48px;
+}
+.boxError{
+	width:267px;
+	border:4px solid #c2c2c2;
+	background-color: white;
+	text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left:-135px;	
+    z-index: 1001;
+}
+.boxErrorIcon{
+	display: inline-block;
+	width:28px;
+	height: 28px;
+	background:url(../images/quotation/close.icon.png) no-repeat;
+	margin-bottom: -8px;
+	margin-right: 8px;
+}
+.boxErrorText{
+	font-size: 16px;
+	color: #2e2e2e;
+	line-height: 48px;
+}

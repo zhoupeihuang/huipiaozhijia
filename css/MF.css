@@ -41,20 +41,37 @@
 
 }
 .messageItemNew{
-	background-color: #fcfbfb;
+
 }
 .messageItem div{
 	float: left;
-	line-height: 80px;
+	line-height: 40px;
 	text-align: left;
-	border-bottom: 2px dashed #ececec;
+	font-size: 12px;
+	border-bottom: 2px dashed #eeeeee;
 }
 .messageItem .messageCheck{
-	width:250px;
+	width:234px;
 	margin-left: 36px;
 }
-.messageItem .messageName{
+.messageItem .messageName{	
 	width:302px;
+	padding-left:16px;
+}
+.messageItem .messageName a:hover{
+	color: #2e2e2e;
+	text-decoration: underline;
+}
+.messageItemNew .messageName{
+	background:url(../images/account/unread.png) no-repeat;
+	background-position: left center;	
+}
+.messageItemNew .messageName a{
+	color: #aa3c16;
+}
+.messageItemNew .messageName a:hover{
+	text-decoration: underline;
+	color: #aa3c16;
 }
 .messageItem .messageTime{
 	width:340px;
@@ -82,7 +99,45 @@
 	display: inline-block;
 	margin-right: 22px;
 }
-/**********消息中心************/
+.messagePage{
+	
+}
+.messagePageTitle{
+	line-height: 56px;
+	margin-top: 20px;
+}
+.mpt-name,.mpt-time,.mpt-delete{
+	float: left;
+	font-size: 16px;
+}
+.mpt-name{
+	text-align: center;
+	width:590px;
+}
+.mpt-time{
+	text-align: left;
+	width:230px;
+}
+.mpt-delete{
+	color:#2caaec;
+}
+.messagePageContent{
+	border-top:1px solid #ececec;
+	background-color: #f6f6f6;
+	margin-left:34px;
+	margin-right: 34px;
+	padding:20px;
+	font-size: 16px;
+	color: #5d5d5d;
+}
+.messagePageButtons{
+	margin:34px;
+	text-align: right;
+}
+.mpb-link{
+	color:#2e2e2e;
+	font-size: 14px;
+}
 .ui-pagination {
     padding: 30px 0;
     width: 100%;
@@ -96,17 +151,17 @@
 }
 .ui-pagination ul li a {
     border: 1px solid #cccccc;
-    border-radius: 4px;
+    border-radius: 2px;
     color: #999;
     cursor: pointer;
     display: block;
     font-family: Helvetica;
     font-size: 16px;
-    height: 40px;
-    line-height: 40px;
+    height: 26px;
+    line-height: 26px;
     overflow: hidden;
     text-align: center;
-   	padding:0px 15px;
+    width: 26px;
 }
 .ui-pagination ul li a:hover, .ui-pagination ul li a:active {
     background-color: #edaa53;
@@ -117,8 +172,8 @@
     color: #999;
     display: block;
     font-size: 16px;
-    height: 40px;
-    line-height: 40px;
+    height: 26px;
+    line-height: 16px;
     overflow: hidden;
     padding: 0 0 1px 1px;
     text-align: center;
@@ -228,8 +283,42 @@
 	text-align: center;
 	font-size: 16px;
 }
-
-
+.cf-success{
+	margin-top: 70px;
+	margin-bottom: 90px;
+	text-align: center;
+	font-size: 20px;
+}
+.cf-success .cfSuccIcon{
+	width:46px;
+	height: 46px;
+	display: inline-block;
+	background:url(../images/account/cert.success.png) no-repeat;
+	margin-bottom: -15px;
+	margin-right:10px;	
+}
+.cf-success b{
+	color: #aa3c16;
+	font-weight: normal;
+}
+.cf-fail{
+	margin-top: 70px;
+	margin-bottom: 90px;
+	text-align: center;
+	font-size: 20px;
+	color: #aa3c16;
+}
+.cfFailIcon{
+	width:46px;
+	height: 46px;
+	display: inline-block;
+	background:url(../images/account/cert.fail.png) no-repeat;
+	margin-bottom: -15px;
+	margin-right:10px;	
+}
+.cf-bodernone{
+	border-bottom: none !important;
+}
 .cfl-label2,.cfl-label,.cfl-body{
 	float: left;
 }
@@ -253,20 +342,32 @@
 	margin-left: 19px;
 }
 .cflb-input{
-	width:410px;
+	width:320px;
 	height: 42px;
 	border:1px solid #dddddd;
 	position: relative;
+}
+.cflb-input-text{
+	font-size: 16px;
+	line-height: 42px;
+	height: 42px;
+	width:400px;	
+	border:none;
 }
 .cflb-input input{
 	font-size: 16px;
 	line-height: 42px;
 	height: 42px;
-	width:250px;
+	width:280px;
 	padding-left:19px;	
 	border:none;
 }
-
+.cflb-img{
+	width:260px;
+}
+.cflb-img img{
+	width:100%;
+}
 .cflb-input .cflbi-get{
 	font-size: 14px;
 	line-height: 44px;
@@ -282,9 +383,8 @@
 	cursor: pointer;
 }
 .cflbi-upload{
-	width:128px;
-	height:40px;
-	line-height: 40px;
+	height:200px;
+	line-height: 200px;
 	background-color: #fff5e7;	
 	text-align: center;
 	color: #edaa53;
@@ -314,6 +414,7 @@
 	line-height: 30px;
 	color:#df4d46;
 	font-size: 14px;
+	clear: both;
 }
 .cflb-note2{
 	height: 30px;
@@ -372,6 +473,76 @@
 	text-align: center;
 	margin:60px auto
 }
+
+.CertificationTip{
+	border-radius: 3px;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 18px;
+	border: 1px solid #e5c4b9;
+	background-color: #fff5f2;
+	font-size: 14px;
+	color: #aa3c16;
+	margin-top: 20px;
+}
+.CertificationTip span{
+	height: 24px;
+	line-height: 24px;
+	padding:0px 12px;
+	display: inline-block;
+	background-color: #aa3c16;
+	font-size: 14px;
+	margin-right: 10px;	
+	color: white;
+}
+.CertificationTip a{
+	height: 24px;
+	line-height: 24px;
+	padding:0px 12px;
+	display: inline-block;
+	font-size: 14px;
+	color: #21aff1;
+}
+.CertificationTip i{
+	width:20px;
+	height: 20px;
+	background:url(../images/account/ba-close.png) no-repeat;
+	float: right;
+	margin-right: 20px;
+	margin-top: 7px;
+	display: block;
+}
+.CertificationTipGreen{
+	border-radius: 3px;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 18px;
+	border: 1px solid #bee9c9;
+	background-color: #f2fff5;
+	font-size: 14px;
+	color: #27b64c;
+	margin-top: 20px;
+}
+.CertificationTipGreen span{
+	height: 24px;
+	line-height: 24px;
+	padding:0px 12px;
+	display: inline-block;
+	background-color: #27b64c;
+	margin-right: 10px;
+	font-size: 14px;
+	color: white;
+}
+.CertificationTipGreen i{
+	width:20px;
+	height: 20px;
+	background:url(../images/account/ba-close-green.png) no-repeat;
+	float: right;
+	margin-right: 20px;
+	margin-top: 7px;
+	display: block;
+}
+
 /**********银行账号**********/
 .BankAccountTab{
 	background-color: #f2ebe9;
@@ -402,10 +573,58 @@
 	color: #aa3c16;
 	margin-top: 20px;
 }
+.BankAccountTip span{
+	height: 24px;
+	line-height: 24px;
+	padding:0px 12px;
+	display: inline-block;
+	background-color: #aa3c16;
+	font-size: 14px;
+	margin-right: 10px;	
+	color: white;
+}
+.BankAccountTip a{
+	height: 24px;
+	line-height: 24px;
+	padding:0px 12px;
+	display: inline-block;
+	font-size: 14px;
+	color: #21aff1;
+}
 .BankAccountTip i{
 	width:20px;
 	height: 20px;
 	background:url(../images/account/ba-close.png) no-repeat;
+	float: right;
+	margin-right: 20px;
+	margin-top: 7px;
+	display: block;
+	cursor: pointer;
+}
+.BankAccountTipGreen{
+	height: 34px;
+	line-height: 34px;
+	padding-left: 18px;
+	border: 1px solid #bee9c9;
+	background-color: #f2fff5;
+	font-size: 14px;
+	color: #27b64c;
+	margin-top: 20px;
+}
+.BankAccountTipGreen span{
+	height: 24px;
+	line-height: 24px;
+	padding:0px 12px;
+	display: inline-block;
+	background-color: #27b64c;
+	margin-right: 10px;
+	font-size: 14px;
+	color: white;
+}
+.BankAccountTipGreen i{
+	width:20px;
+	height: 20px;
+	background:url(../images/account/ba-close-green.png) no-repeat;
 	float: right;
 	margin-right: 20px;
 	margin-top: 7px;
@@ -417,33 +636,607 @@
 }
 .BankAccountAddBox{
 	width:298px;
-	height: 178px;
-	border:1px solid #d8d8d8;
-	float: left;
-	margin-right: 30px;
+	height: 138px;
+	border:1px solid #d49d8a;
+	background-color: #fff2ee;
 }
 .baab-icon{
 	width:50px;
 	height: 50px;
 	background:url(../images/account/baab-add.png) no-repeat;
-	margin:46px auto 20px auto;
+	margin:24px auto 20px auto;
 }
 .baab-text{
-	color:#d8d8d8;
+	color:#aa3c16;
 	font-size: 18px;
 	text-align: center;
 }
 .BankAccountList{
 	margin-top: 30px;
+	margin-left:34px;
+	margin-right: 34px;
 }
 .BankAccountList table{
 	width: 100%;
-
 	border-spacing: none;
 	border-collapse:collapse;
+	border:1px solid #b8b8b8;
 }
 .BankAccountList table th{
 	background-color: #f6f6f6;
-	color: #5d5d5d;
+	color: #2e2e2e;
+	font-size: 14px;
 	height: 48px;
+	font-weight: normal;
+}
+.BankAccountList table th,
+.BankAccountList table td
+{
+	text-align: left;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.BankAccountList table td{
+	border-top: 1px solid #b8b8b8;
+	height: 58px;
+	color: #5d5d5d;
+}
+.BankAccountList table tr.bal-buttons td{
+	height: 38px;
+}
+.bal-detail{
+	display: inline-block;
+	width:54px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	border:1px solid #b8b8b8;
+	font-size: 14px;
+	background-color: #e6e6e6;
+}
+.col-left{
+	position: relative;
+}
+.BankAccountList table td.col-right{
+	text-align: right;
+}
+.bal-jt{
+	width:16px;
+	height: 16px;
+	display: inline-block;
+	background:url(../images/account/jt.png) no-repeat;
+	margin-right:9px;
+	margin-bottom: -3px;
+}
+.bal-jt-on{
+	width:16px;
+	height: 16px;
+	display: inline-block;
+	background:url(../images/account/jt.on.png) no-repeat;
+	margin-right:9px;
+	margin-bottom: -3px;	
+}
+.white-padding{
+	width:10px;
+	height: 3px;
+	position: absolute;
+	top:-1px;
+	left:0px;
+	background-color: white;
+}
+.bal-delete{
+	display: inline-block;
+	width:40px;
+	height: 24px;
+	line-height: 24px;
+	padding-left:24px;
+	margin-right: 29px;
+	background:url(../images/account/delete.icon.png) no-repeat;
+	background-position: left center;
+}
+.bal-red{
+	color:#aa3c16;
+}
+.BankAccountList table td.bal-text-right{
+	width:100px;
+	text-align: left;
+	padding-right: 10px;
+}
+
+
+.sellerBankForm{
+	margin-top:40px;
+	margin-bottom: 40px;
+}
+.sbf-label2,.sbf-label,.sbf-body{
+	float: left;
+}
+.sbf-body label{
+	font-size: 14px;
+	color: #5d5d5d;
+}
+.sbf-label{
+	width:100px;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 34px;
+	font-size: 16px;
+	text-align: left;
+}
+.sbf-label2{
+	width:100px;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 96px;
+	font-size: 16px;
+	text-align: left;
+}
+
+.sbf-body{
+	margin-left: 19px;
+}
+.sbfb-input{
+	width:410px;
+	height: 42px;
+	position: relative;
+}
+.sbfb-input-text{
+	line-height: 42px;
+	font-size: 16px;
+	color: #2e2e2e;
+}
+.sbfb-input-border{
+	border:1px solid #dddddd;	
+}
+.sbfb-input input{
+	font-size: 16px;
+	line-height: 42px;
+	height: 42px;
+	width:380px;
+	padding-left:19px;	
+	border:none;
+}
+
+.sbfb-note{
+	height: 30px;
+	line-height: 30px;
+	color:#df4d46;
+	font-size: 14px;
+}
+.sbfb-note-demo{
+	height: 30px;
+	line-height: 30px;
+	color:#5d5d5d;
+	font-size: 14px;
+}
+
+.sbfb-note i.failIcon{
+	display: inline-block;
+	margin-bottom: -5px;
+	margin-left:20px;
+	margin-right:10px;
+	width:20px;
+	height: 20px;
+	background:url(../images/failIcon.png) no-repeat;
+}
+.sbf-checkbox{
+	display: inline-block;
+	margin-right: 10px;
+}
+.sbf-button{
+	width:410px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+	color: white;
+	background-color: #edaa53;
+	display: block;
+	border: none;
+	border-radius: 3px;
+	text-align: center;
+}
+.sbf-tip{
+	margin:10px 34px 30px 34px;
+	background-color: #fff2d2;
+	color: #edaa53;
+	font-size: 14px;
+	border: 1px solid #fae5cb;
+	padding:10px 20px;
+}
+/*************卖家汇票发布****************/
+.sellStep{
+	float: right;
+	width:960px;
+	background-color: white;
+	position: relative;
+}
+.sellStepIcons{
+	width:960px;
+	height: 56px;
+	background:url(../images/account/transaction.step.jpg) no-repeat;
+	margin-top:20px;
+	margin-bottom: 55px;
+}
+.sellStepText1,
+.sellStepText2,
+.sellStepText3,
+.sellStepText4,
+.sellStepText5,
+.sellStepText6{
+	position: absolute;
+	top:96px;
+	font-size: 14px;
+	color: #2e2e2e;
+}
+.sellStepText1{
+	left:50px;
+}
+.sellStepText2{
+	left:199px;
+}
+.sellStepText3{
+	left:372px;
+}
+.sellStepText4{
+	left:502px;
+}
+.sellStepText5{
+	left:674px;
+}
+.sellStepText6{
+	left:820px;
+}
+
+
+.sellPublishBox {
+  margin-top: 20px;
+  width: 960px;
+  position: relative;
+  float: right;
+  background-color: white;
+}
+.spbNav {
+  height: 58px;
+  width: 100%;
+  background-color: #F2EBE9;
+}
+.spbNav > ul > li {
+  width: 150px;
+  height: 58px;
+  line-height: 58px;
+  background-color: #f0dcd8;
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  font-size: #333;
+  float: left;
+  cursor: pointer;
+  margin-right: 4px;
+}
+.spbnActive {
+  background-color: white !important;
+  color: #aa3c16 !important;
+}
+.spbMain {
+  width: 100%;
+}
+.spbMain > ul > li {
+  display: none;
+}
+.spbMain > ul > li:first-child {
+  display: block;
+}
+.spbm-title{
+	margin-left:34px;
+	margin-right: 34px;
+	border-bottom: 1px dashed #e8e8e8;
+	position: relative;
+}
+.spbm-title span{
+	 width: 106px;
+	 height: 30px;
+	 border: 3px solid #aa3c16;
+	 display: block;
+	 position: absolute;
+	 left: 180px;
+	 top: 36px;
+	 font-size: 14px;
+	 line-height: 30px;
+	 text-align: center;
+	 color: #2e2e2e;
+}
+.spbm-name{
+	width:120px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 16px;
+	color: black;
+	background-color: #f6edea;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	text-align: center;
+	float: left;
+}
+.spbm-name-desc{
+	float: left;
+	font-size: 14px;
+	color: #858585;
+	margin-top: 45px;
+	margin-left: 10px;
+}
+.spbm-tip{
+	display: block;
+	float: right;
+	font-size: 12px;
+	color: #aa3c16;
+	margin-top: 66px;
+}
+.spbm-tip-text{
+	display: block;
+	float: right;
+	font-size: 12px;
+	margin-top: 66px;
+}
+.spbm-tip-text a{
+	color: #aa3c16;
+}
+.spbm-short-body{
+	width:570px;
+	margin-left: 34px;
+	margin-top: 20px;
+	position: relative;
+}
+.spbm-short-body div{
+	float: left;
+	width:106px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #2e2e2e;
+	text-align: center;
+	border:3px solid #dbdbdb;
+	margin-bottom: 10px;
+	margin-right: 30px;	
+	cursor: pointer;
+}
+.spbm-short-body .spbmsb-active{
+	border:3px solid #aa3c16;
+	background:url(../images/account/item-selected.png) no-repeat;
+	background-position: right top;
+}
+.spbm-long-tip{
+	border:1px solid #fae5cb;
+	background-color: #fff5e9;
+	font-size: 14px;
+	color: #edaa53;
+	line-height: 20px;
+	padding:7px 22px;
+	border-radius: 3px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.spbm-body{
+	margin-top:20px;
+	margin-left:34px;
+	margin-right: 34px;
+}
+.spbm-body1{
+	padding-left: 34px;
+}
+.spbm-body1 img{
+	float: left;
+	width: 290px;
+	margin-right: 10px;
+}
+.spbm-body textarea{
+	width:874px;
+	height: 86px;
+	padding:9px;
+	font-size: 14px;
+}
+.spbm-button{
+	display: block;
+	font-size: 20px;
+	color: white;
+	background-color: #aa3c16;
+	width:260px;
+	height: 48px;
+	border: none;
+	margin:60px auto;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+.spbmbl-label,.spbmbl-body{
+	float: left;
+}
+.spbmbl-label{
+	margin-left: 122px;
+	width:82px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	text-align: left;
+}
+.spbmbl-body{
+	margin-left: 19px;
+}
+.spbmblb-input{
+	width:428px;
+	height: 42px;
+	position: relative;
+}
+.spbmblb-input-border{
+	border:1px solid #dddddd;	
+}
+.spbmblb-type-item{
+	float: left;
+	width:164px;
+	height: 36px;
+	background-color:white;
+	color: #2e2e2e;
+	line-height: 36px;
+	font-size: 16px;
+	text-align: center;
+	margin-right: 20px;
+	border:3px solid #dbdbdb;
+	cursor:pointer;
+}
+.spbmblb-active{
+	border:3px solid #aa3c16;
+	background:url(../images/account/item-selected.png) no-repeat;
+	background-position: right top; 
+}
+.spbmblb-input .spbmblbi-text{
+	font-size: 16px;
+	line-height: 42px;
+	height: 42px;
+	width:370px;
+	padding-left:19px;	
+	border:none;
+}
+
+.spbmblb-input .spbmblbi-get{
+	font-size: 14px;
+	line-height: 44px;
+	height: 44px;
+	width:100px;
+	text-align: center;		
+	border:none;
+	background-color:#9d4224;
+	color: white;
+	position: absolute;
+	top:-1px;
+	right:-1px;
+	cursor: pointer;
+}
+.spbmblb-input .spbmblbi-yuan{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height: 42px;
+	width:50px;
+	line-height: 42px;
+	font-size: 16px;
+	text-align: center;
+	border-left:1px solid #dddddd;
+	background-color:#eeeeee;
+}
+.spbmblb-input .spbmblbi-date-icon{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height: 42px;
+	width:50px;
+	line-height: 42px;
+	text-align: center;
+	border-left:1px solid #dddddd;
+	background-color:#eeeeee;
+	background-image: url(../images/account/date.picker.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.spbmblb-note{
+	height: 30px;
+	line-height: 30px;
+	color:#df4d46;
+	font-size: 14px;
+}
+.spbmblb-note2{
+	height: 30px;
+	line-height: 30px;
+	color:#b8b8b8;
+	font-size: 14px;
+}
+.spbmblb-note i.failIcon{
+	display: inline-block;
+	margin-bottom: -5px;
+	margin-left:20px;
+	margin-right:10px;
+	width:20px;
+	height: 20px;
+	background:url(../images/failIcon.png) no-repeat;
+}
+.spbmblb-note2 i.failIcon{
+	display: inline-block;
+	margin-bottom: -5px;
+	margin-left:20px;
+	margin-right:10px;
+	width:20px;
+	height: 20px;
+	background:url(../images/failIconGray.png) no-repeat;
+}
+.spbmblb-note2 a,.spbmblb-note2 a:hover{
+	color:#aa3b17;
+}
+.spbmblb-note i.succIcon{
+	display: inline-block;
+	margin-bottom: -4px;
+	margin-left:20px;
+	margin-right:10px;
+	width:18px;
+	height:18px;
+	background:url(../images/succIcon.png) no-repeat;
+}
+.spbmblb-note em{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	color:#59b259;
+	font-size: 14px;
+	font-style: normal;
+}
+/*************我是买方，待签收，输入交易密码弹框***************/
+.pop-input-password{
+      padding-top:80px;  
+      padding-bottom: 30px;		
+}
+.pwd-box{  
+    width:280px;  
+    margin-left:80px;
+    padding-left: 1px;  
+    position: relative;  
+    border: 1px solid #9f9fa0;  
+    border-radius: 3px;  
+    overflow:hidden;  
+}  
+.pwd-box .pwd-input{  
+    width: 99%;  
+    height: 45px;  
+    color: transparent;  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    border: none;  
+    font-size: 18px;  
+    opacity: 0;  
+    z-index: 10;  
+    letter-spacing: 35px;  
+}  
+.fake-box{
+
+}
+.fake-box input{  
+    width: 44px;  
+    height: 48px;  
+    border: none;  
+    border-right: 1px solid #e5e5e5;  
+    text-align: center;  
+    font-size: 30px;  
+}  
+.fake-box input:nth-last-child(1){  
+    border:none;  
+}  
+.popForgotPassword{
+	text-align: right;
+}
+.popForgotPassword a{
+	margin-right: 40px;
+}
+.pop-password-note{
+	padding-left: 60px;
+	text-align: left;
 }

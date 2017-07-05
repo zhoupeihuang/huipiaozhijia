@@ -1,0 +1,196 @@
+/**********贴现计算器************/
+.mainbgs{
+	background-color: #f5f8fe;
+}
+.calculatorTitle{
+	height: 62px;
+	line-height: 62px;
+	margin-bottom: 20px;
+	background:url(../images/calculator/title.bg.png) repeat-x;
+}
+.calculatorTitle span{
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 20px;
+	color: #2e2e2e;
+}
+.cbNav {
+  height: 58px;
+  width: 100%;
+}
+.cbNav > ul > li {
+  width: 150px;
+  height: 58px;
+  line-height: 58px;
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  font-size: #333;
+  float: left;
+  cursor: pointer;
+  margin-right: 4px;
+}
+.cbActive {
+  background-color: white !important;
+  border:1px solid #b8b8b8;
+  border-bottom: none;
+}
+.cbMain {
+  width: 100%;
+}
+.cbMain > ul > li {
+  display: none;
+  background-color: white;
+  border:1px solid #b8b8b8;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+.cbMain > ul > li:first-child {
+  display: block;
+}
+
+
+.cbml-label,.cbml-body{
+	float: left;
+}
+.cbml-label{
+	margin-left: 150px;
+	width:82px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	text-align: left;
+}
+.cbml-body{
+	margin-left: 19px;
+}
+.cbmlb-input{
+	width:428px;
+	height: 42px;
+	position: relative;
+}
+.cbmlb-input-border{
+	border:1px solid #dddddd;	
+}
+
+.cbmlb-input .cbmlbi-text{
+	font-size: 16px;
+	line-height: 42px;
+	height: 42px;
+	width:370px;
+	padding-left:19px;	
+	border:none;
+}
+.cbmlb-input .succIconBig{
+	display: none;
+	position: absolute;
+	top:11px;
+	right:-46px;
+	width:26px;
+	height: 26px;
+	background:url(../images/succIcon.big.png) no-repeat;
+}
+.cbmlb-input .cbmlbi-yuan{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height: 42px;
+	width:50px;
+	line-height: 42px;
+	font-size: 16px;
+	text-align: center;
+	border-left:1px solid #dddddd;
+	background-color:#eeeeee;
+}
+.cbmlb-input .cbmlbi-wanyuan{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height: 42px;
+	width:70px;
+	line-height: 42px;
+	font-size: 16px;
+	text-align: center;
+	border-left:1px solid #dddddd;
+	background-color:#eeeeee;
+}
+.cbmlb-input .cbmlbi-date-icon{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height: 42px;
+	width:50px;
+	line-height: 42px;
+	text-align: center;
+	border-left:1px solid #dddddd;
+	background-color:#eeeeee;
+	background-image: url(../images/account/date.picker.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.cbmlb-note{
+	height: 30px;
+	line-height: 30px;
+	color:#df4d46;
+	font-size: 14px;
+}
+
+.cbmlb-note i.failIcon{
+	display: inline-block;
+	margin-bottom: -5px;
+	margin-left:20px;
+	margin-right:10px;
+	width:20px;
+	height: 20px;
+	background:url(../images/failIcon.png) no-repeat;
+}
+.cbm-line-buttons{
+	width:460px;
+	margin-left: 250px;
+	margin-top: 30px;
+}
+.cbmlB-button{
+	background-color:#edaa53;
+	color:white;
+	width:200px;
+	margin-right: 30px;
+	float: left;
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+	text-align: center;
+	display: block;
+	border: none;
+	border-radius: 3px;
+}
+.cbmlB-button-gray{
+	background-color: #b8b8b8;
+}
+.cbm-line-result{
+	margin-left:250px;
+	margin-top: 20px;
+	width:428px;
+	border:1px solid #edaa53;
+	border-radius: 3px;
+	background-color:#ffefc8;
+	color:#edaa53;
+	padding-bottom: 13px;
+}
+.cbmlr-title{
+	font-size: 16px;
+	line-height: 34px;
+	padding-left:10px;
+}
+.cbmlr-body{
+	font-size: 14px;
+	line-height: 28px;
+}
+.cbmlr-body span{
+	width:78px;
+	display: inline-block;
+	margin-left:46px;
+	text-align: left;
+}
+.cbmlr-body i{
+	font-style: normal;
+}

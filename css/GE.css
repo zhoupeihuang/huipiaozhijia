@@ -120,6 +120,11 @@ a {
 	zoom: 1;
 }
 
+::-moz-selection {
+	background: #3498db !important;
+	color: #fff;
+}
+
 ::selection {
 	background: #3498db !important;
 	color: #fff;
@@ -437,7 +442,17 @@ input:focus{
 .cf {
 	zoom: 1;
 }
-
+.top0{
+	top: 0px !important;
+}
+.pa0 {
+	padding: 0px !important;
+}
+.patrl0 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+}
 .pa3 {
 	padding: 3px;
 }
@@ -477,6 +492,9 @@ input:focus{
 }
 .mt-40{
 	margin-top: -40px!important;
+}
+.mt0 {
+	margin-top: 0px !important;
 }
 .mt5 {
 	margin-top: 5px !important;
@@ -676,7 +694,8 @@ input:focus{
 	background-color: #fff;
 	height: 307px;
 	position: relative;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 	overflow-x: hidden;
 	text-align: center;
 	overflow-y: hidden;
@@ -689,7 +708,8 @@ input:focus{
 	margin-top: 10px;
 	position: relative;
 	background-color: #fff;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .arrow-shadow {
@@ -700,7 +720,8 @@ input:focus{
 	background-color: #fff;
 	width: 20px;
 	height: 20px;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 	transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -734,7 +755,8 @@ input:focus{
 
 .leftL {
 	background-color: #fff;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 	border-top: 1px solid #eff3f5;
 	border-bottom: 1px solid #eff3f5;
 	width: 940px;

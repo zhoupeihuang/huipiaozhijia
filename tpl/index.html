@@ -31,6 +31,30 @@
 		@@include("../src/navhead.html") 
 		@@include("../src/header.html") 
 		@@include("../src/slide.html") 
+		<div class="swiper-container3">
+			<div class="lb">网站公告</div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#">1关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+				<div class="swiper-slide">
+					<a href="#">2关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+				<div class="swiper-slide">
+					<a href="#">3关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+				<div class="swiper-slide">
+					<a href="#">1关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+				<div class="swiper-slide">
+					<a href="#">1关于兴业银行监管账户对接交易判定通过央行系统验证</a><span>2017-04-10</span></div>
+			</div>
+		</div>
+<script>
+			
+				/*公司公告的*/
+				var swiper = new Swiper('.swiper-container3', {
+//					slidesPerView: 5,
+					direction: 'vertical',
+					autoplay: 1800
+				});
+			</script>
 		@@include("../src/goodness.html")	
 		<!--内部内容-->
 		<section id="maxBox">
@@ -40,6 +64,7 @@
 			@@include("../src/paperProduct.html")
 		</section>
 		<!--内部内容-->
+		@@include("../src/side.html") 				
 		@@include("../src/cooperativeAgency.html") 		
 		@@include("../src/footer.html") 
 	</body>

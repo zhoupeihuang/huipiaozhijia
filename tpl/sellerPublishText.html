@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ZP.css"/>
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>		
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="mainbgs">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox cf mt20 mb20">
+				@@include("../src/myAccountLeftNav.html")
+				<div class="sellStep">
+					<div class="sellStepIcons"></div>
+					<div class="sellStepText1">1、发布票据信息</div>
+					<div class="sellStepText2">2、平台审核信息</div>
+					<div class="sellStepText3">3、询价中</div>	
+					<div class="sellStepText4">4、选择交易对手</div>	
+					<div class="sellStepText5">5、交易中</div>	
+					<div class="sellStepText6">6、交易完成</div>							
+				</div>
+				
+				<div class="sellPublishBox cf">
+					<div class="spbMain cf">
+						<ul>
+							<li>
+								<div class="spbm-title cf">
+									<div class="spbm-name">票据类型</div>
+									<div class="spbm-tip-text">有票面？使用<a href="sellerPublish.html">票面发布</a></div>
+								</div>
+								<div class="spbm-body cf">
+									<div class="spbmb-line cf">
+										<div class="spbmbl-label">票据类型</div>
+										<div class="spbmbl-body">
+											<div class="spbmblb-input spbmblb-input-Type">
+												<div class="spbmblb-type-item spbmblb-active">银行承兑汇票</div>
+												<div class="spbmblb-type-item">商业承兑汇票</div>							
+											</div>
+											<div class="spbmblb-note">
+												<i class="failIcon"></i>票据类型错误！
+											</div>
+										</div>
+									</div>	
+									<div class="spbmb-line cf">
+										<div class="spbmbl-label">物理属性</div>
+										<div class="spbmbl-body">
+											<div class="spbmblb-input spbmblb-input-Physics">
+												<div class="spbmblb-type-item">纸质票</div>
+												<div class="spbmblb-type-item spbmblb-active">电子票</div>							
+											</div>
+											<div class="spbmblb-note">
+												<i class="failIcon"></i>物理属性错误！
+											</div>
+										</div>
+									</div>		
+									<div class="spbmb-line cf">
+										<div class="spbmbl-label">票据号码</div>
+										<div class="spbmbl-body">
+											<div class="spbmblb-input spbmblb-input-border">
+												<input class="spbmblbi-text" type="text"  placeholder="请输入票据号码"/>
+											</div>
+											<div class="spbmblb-note">
+												<i class="failIcon"></i>票据号码错误！
+											</div>
+										</div>
+									</div>	
+									<div class="spbmb-line cf">
+										<div class="spbmbl-label">承兑方全称</div>
+										<div class="spbmbl-body">
+											<div class="spbmblb-input spbmblb-input-border">
+												<input class="spbmblbi-text" type="text"  placeholder="请输入承兑方全称"/>
+											</div>
+											<div class="spbmblb-note">
+												<i class="failIcon"></i>承兑方全称错误！
+											</div>
+										</div>
+									</div>										
+									<div class="spbmb-line cf">
+										<div class="spbmbl-label">票面金额</div>
+										<div class="spbmbl-body">
+											<div class="spbmblb-input spbmblb-input-border">
+												<input class="spbmblbi-text" type="text"  placeholder="请输入票面金额"/>
+												<span class="spbmblbi-yuan">元</span>
+											</div>
+											<div class="spbmblb-note">
+												<i class="failIcon"></i>票面金额错误！
+											</div>
+										</div>
+									</div>
+									<div class="spbmb-line cf">
+										<div class="spbmbl-label">汇票到期日</div>
+										<div class="spbmbl-body">
+											<div class="spbmblb-input spbmblb-input-border">
+												<input class="spbmblbi-text" id="datepicker" type="text"  placeholder="请选择汇票到期日"/>
+												<span class="spbmblbi-date-icon" id="datepicker-show"></span>
+											</div>
+											<div class="spbmblb-note">
+												<i class="failIcon"></i>汇票到期日错误！
+											</div>
+										</div>
+									</div>												
+								</div>								
+								<div class="spbm-title cf">
+									<div class="spbm-name">选择背书情况</div>
+									<a class="spbm-tip">我的汇票有几手背书？</a>
+								</div>
+								<div class="spbm-short-body spbm-short-body-endorse cf">
+									<div class="spbmsb-active">无背书</div>
+									<div>1手背书</div>
+									<div>2手背书</div>
+									<div>3手背书</div>
+									<div>4手背书</div>
+									<div>5手背书</div>
+									<div>6手背书</div>
+									<div>6手以上</div>									
+								</div>
+								<div class="spbm-title cf">
+									<div class="spbm-name">选择汇票瑕疵</div>
+									<a class="spbm-tip">什么是汇票瑕疵？</a>
+								</div>
+								<div class="spbm-short-body spbm-short-body-short-flaw cf">
+									<div class="spbmsb-active">无瑕疵</div>
+									<div>回头背书</div>								
+								</div>
+								<div class="spbm-short-body spbm-short-body-long-flaw cf">
+									<div class="spbmsb-active">无瑕疵</div>
+									<div>回头背书</div>	
+									<div>背书出框</div>	
+									<div>抬背不符</div>	
+									<div>背书不清晰</div>	
+									<div>骑缝章不规范</div>	
+									<div>书写不规范</div>	
+									<div>其他瑕疵</div>	
+								</div>								
+								<div class="spbm-long-tip">提示：为了保障买方报价的准确性，请您如实反馈票面截图、票据背书和汇票瑕疵情况，若因您没有如实反馈以上信息造成后续交易过程中可能存在的问题，将由您自行承担。</div>
+								<div class="spbm-title cf">
+									<div class="spbm-name">备注</div>
+									<div class="spbm-name-desc">非必填项</div>
+								</div>
+								<div class="spbm-body cf">
+									<textarea placeholder="可以填写票面内容的特殊说明，对交易对手和交易方式的要求等。"></textarea>								
+								</div>
+								<input class="spbm-button" type="button" value="马上发布" />
+							</li>
+						</ul>
+					</div>
+				</div>				
+				
+			</div>
+		</section>
+		
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+	<script src="js/jquery.datetimepicker.full.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#datepicker").datetimepicker({
+			timepicker:false,
+			format:"Y/m/d"
+		});
+		$("#datepicker-show").click(function(){
+			$("#datepicker").datetimepicker('show');
+		});	
+		
+		$(".spbmblb-input-Type .spbmblb-type-item").click(function(){
+			$(this).addClass("spbmblb-active").siblings().removeClass("spbmblb-active");
+		});
+		$(".spbmblb-input-Physics .spbmblb-type-item").click(function(){
+			$(this).addClass("spbmblb-active").siblings().removeClass("spbmblb-active");
+			if($(this).html()=="电子票"){
+				$('.spbm-short-body-short-flaw').show();
+				$('.spbm-short-body-long-flaw').hide();
+			}else{
+				$('.spbm-short-body-short-flaw').hide();
+				$('.spbm-short-body-long-flaw').show();
+			}
+		});	
+		$(".spbm-short-body-endorse div").click(function(){
+			$(this).addClass("spbmsb-active").siblings().removeClass("spbmsb-active");
+		});	
+		$(".spbm-short-body-short-flaw div").click(function(){
+			$(this).addClass("spbmsb-active").siblings().removeClass("spbmsb-active");
+		});	
+		$(".spbm-short-body-long-flaw div").click(function(){
+			$(this).toggleClass("spbmsb-active");
+		});			
+	});
+	</script>
+</html>

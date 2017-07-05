@@ -1,18 +1,9 @@
 <!--第三层-->
-<div class="mmSFBox cf">
-	<div class="mmHNav">
-		<ul>
-			<li class="mmHNavActive">账户管理</li>
-			<li>我是卖方</li>
-			<li>我是买方</li>
-			<li>常用知识</li>
-		</ul>
-	</div>
 	<div class="mmHMain cf">
 		<ul>
 			<li class="cf">
 				<dl class="helpCLine">
-					<dt><i class="hcicon hcjt0"></i>为什么会登录失败呢？<i class="hcicon hcjt2 rightM"></i></dd>
+					<dt><i class="hcicon hcjt0"></i>111为什么会登录失败呢？<i class="hcicon hcjt2 rightM"></i></dd>
 					<dd class="cf">
 						<p class="hctitle">我知道也不会告诉你的！</p>
 						1，请确认您输入的账户是否正确，若您的手机号码绑定了多个帐号，必须使用用户名进行登录，如果忘记用户名，您可以点击登录页的【找回用户名】进行找回。<br />
@@ -50,7 +41,7 @@
 			</li>
 			<li>
 				<dl class="helpCLine">
-					<dt><i class="hcicon hcjt0"></i>为什么会登录失败呢？<i class="hcicon hcjt2 rightM"></i></dd>
+					<dt><i class="hcicon hcjt0"></i>222为什么会登录失败呢？<i class="hcicon hcjt2 rightM"></i></dd>
 					<dd class="cf">
 						<p class="hctitle">我知道也不会告诉你的！</p>
 						1，请确认您输入的账户是否正确，若您的手机号码绑定了多个帐号，必须使用用户名进行登录，如果忘记用户名，您可以点击登录页的【找回用户名】进行找回。<br />
@@ -88,7 +79,7 @@
 			</li>
 			<li>
 				<dl class="helpCLine">
-					<dt><i class="hcicon hcjt0"></i>为什么会登录失败呢？<i class="hcicon hcjt2 rightM"></i></dd>
+					<dt><i class="hcicon hcjt0"></i>333为什么会登录失败呢？<i class="hcicon hcjt2 rightM"></i></dd>
 					<dd class="cf">
 						<p class="hctitle">我知道也不会告诉你的！</p>
 						1，请确认您输入的账户是否正确，若您的手机号码绑定了多个帐号，必须使用用户名进行登录，如果忘记用户名，您可以点击登录页的【找回用户名】进行找回。<br />
@@ -126,7 +117,7 @@
 			</li>
 			<li>
 				<dl class="helpCLine">
-					<dt><i class="hcicon hcjt0"></i>为什么会登录失败呢？<i class="hcicon hcjt2 rightM"></i></dd>
+					<dt><i class="hcicon hcjt0"></i>444为什么会登录失败呢？<i class="hcicon hcjt2 rightM"></i></dd>
 					<dd class="cf">
 						<p class="hctitle">我知道也不会告诉你的！</p>
 						1，请确认您输入的账户是否正确，若您的手机号码绑定了多个帐号，必须使用用户名进行登录，如果忘记用户名，您可以点击登录页的【找回用户名】进行找回。<br />
@@ -164,12 +155,11 @@
 			</li>
 		</ul>
 	</div>
-</div>
 <script>
 	$(function(){
-		$(".mmHNav ul li").click(function(){
+		$(".leftHelpBox ul li").click(function(){
 			var indexs = $(this).index();
-			$(this).addClass("mmHNavActive").siblings().removeClass("mmHNavActive");
+			$(this).addClass("helpNavActive").siblings().removeClass("helpNavActive");
 			$(".mmHMain ul li").eq(indexs).show().siblings().hide();
 		})
 		//单条信息什么的

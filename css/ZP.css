@@ -1,58 +1,70 @@
-.rightContent{
+.rightContent {
 	width: 964px;
 	background-color: #fff;
 	position: relative;
-	float:right;
+	float: right;
 }
+
+
 /*-------安全中心--------*/
-.scStep{
+
+.scStep {
 	text-align: center;
 	color: #993300;
 	font-size: 16px;
 	line-height: 36px;
 	margin-top: 45px;
 }
-.scStep span{
+
+.scStep span {
 	display: block;
 }
-.scStep img{
+
+.scStep img {
 	margin-top: 15px;
 }
-.scList{
+
+.scList {
 	width: 890px;
 	height: 670px;
 	margin: 20px auto 0 auto;
 }
-.scList li{
+
+.scList li {
 	background-image: url(../images/account/zpicon1.gif);
-	background-repeat:repeat-x;
+	background-repeat: repeat-x;
 	background-position: bottom;
 	height: 90px;
 	position: relative;
 	font-size: 14px;
 	line-height: 18px;
 }
-.scList li span,.scList li a{
+
+.scList li span,
+.scList li a {
 	position: absolute;
-	
 }
-.scList li .wd1{
+
+.scList li .wd1 {
 	left: 0;
 	top: 35px;
 	color: #333333;
 	width: 116px;
 }
-.scList li .wd2{
+
+.scList li .wd2 {
 	left: 120px;
 	top: 35px;
 	color: #cccccc;
 	width: 560px;
 }
-.scList li .wd2 b{
+
+.scList li .wd2 b {
 	color: #ff9966;
 	font-weight: normal;
 }
-.scList li .wd3{
+
+.scList li .wd3 {
 	width: 114px;
 	left: 676px;
 	top: 35px;
@@ -62,24 +74,29 @@
 	background-position: 0 0px;
 	padding-left: 30px;
 }
-.scList li .done{
+
+.scList li .done {
 	background-image: url(../images/account/zpicon1.png) !important;
 }
-.scList li .wd4{
+
+.scList li .wd4 {
 	width: 104px;
 	left: 790px;
 	top: 35px;
 	color: #3399ff;
-	
 }
-.scList li .wd4:hover{
+
+.scList li .wd4:hover {
 	color: #3399ff;
 	text-decoration: underline;
 }
 
+
 /*-------基础信息--------*/
-.baseTit{
-	width: 100px;
+
+.baseTit {
+	padding: 0 20px;
+	display: inline-block;
 	height: 46px;
 	text-align: center;
 	background-color: #f6edea;
@@ -89,23 +106,28 @@
 	margin-top: 30px;
 	margin-left: 34px;
 }
-.bsBody{
-	width:660px;
+
+.bsBody {
+	width: 660px;
 }
 
-.bsblb-input{
-	width:393px !important;
+.bsblb-input {
+	width: 393px !important;
 }
-.bsblb-input input{
-	width:270px !important;
+
+.bsblb-input input {
+	width: 270px !important;
 }
-.bsblb-select{
-	width:450px !important;
+
+.bsblb-select {
+	width: 450px !important;
 }
-.bsblb-select select{
-	width:126px !important;
+
+.bsblb-select select {
+	width: 126px !important;
 }
-.inputMust{
+
+.inputMust {
 	color: red;
 	font-size: 26px;
 	line-height: 42px;
@@ -114,21 +136,25 @@
 	left: 406px;
 	top: 5px;
 }
-.bs-input-register{
-	width:393px !important;
-	}
-.wpblb-text a{
+
+.bs-input-register {
+	width: 393px !important;
+}
+
+.wpblb-text a {
 	margin-left: 10px;
 	color: #cc3300;
 	font-size: 12px;
 	line-height: 42px;
 }
-.serviceType{
-	width:415px;
+
+.serviceType {
+	width: 415px;
 	height: 42px;
 	position: relative;
 }
-.serviceType a{
+
+.serviceType a {
 	width: 118px;
 	float: left;
 	background-color: #dddddd;
@@ -137,23 +163,940 @@
 	margin-right: 20px;
 	text-align: center;
 	border-radius: 5px;
-	
 }
-.serviceType .redBg{
+
+.serviceType .redBg {
 	background-color: #c74011;
 	color: #fff;
 }
-.serviceType .redBg:hover{
+
+.serviceType .redBg:hover {
 	color: #fff;
 }
-.serviceType a:hover{
+
+.serviceType a:hover {
 	color: #666666;
 }
-.bsLine{
+
+.bsLine {
 	height: 3px;
 	background-image: url(../images/account/zpicon1.gif);
 	background-repeat: repeat-x;
 	line-height: 0;
 	font-size: 0;
 	width: 964px;
+}
+
+
+/*-------我是卖方--------*/
+
+.sellerNav {
+	width: 964px;
+	border-bottom: 2px solid #f2ebe9;
+	height: 25px;
+	margin-top: 26px;
+}
+
+.sellerNav li {
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	padding: 0px 8px;
+	border-right: 1px solid #f2ebe9;
+	text-align: center;
+	color: #2e2e2e;
+	cursor: pointer;
+	margin: 0 3px;
+}
+
+.sellerNav li:last-child {
+	border-right: none;
+}
+
+.sellerNav li div {
+	float: left;
+	padding: 0px 12px;
+	padding-bottom: 9px;
+}
+
+.sellerNav li span {
+	margin-left: 10px;
+	color: #edaa53;
+}
+
+.sellerNav .slActive div {
+	border-bottom: 2px solid #edaa53;
+}
+
+.sellerTable {
+	width: 876px;
+	margin-left: 43px;
+	margin-top: 20px;
+}
+
+.sellerTable li {
+	position: relative;
+	width: 874px;
+}
+
+.sellerTable .slList1 {
+	border: 1px solid #d49d8a;
+	position: relative;
+}
+
+.sellerTable .slList1 span {
+	line-height: 34px;
+	margin-left: 22px;
+	margin-right: 22px;
+	font-size: 14px;
+	color: #5d5d5d;
+}
+
+.sellerTable .slList1 b {
+	position: absolute;
+	right: 20px;
+	text-align: right;
+	width: 200px;
+	line-height: 34px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #5d5d5d;
+}
+
+.sellerTable .slList2 {
+	border: 1px solid #d49d8a;
+	border-top: none;
+	height: 120px;
+}
+
+.sellerTable .slList2 span {
+	position: absolute;
+	color: #2e2e2e;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.sellerTable .slList2 .swd1 {
+	left: 22px;
+	top: 22px;
+}
+
+.sellerTable .slList2 .swd1 em {
+	line-height: 24px;
+	font-size: 16px;
+	color: #2e2e2e;
+	float: left;
+	font-style: normal;
+}
+
+.sellerTable .slList2 .swd1 b {
+	display: block;
+	margin-left: 10px;
+	border-radius: 3px;
+	border: 1px solid #d49d8a;
+	text-align: center;
+	line-height: 22px;
+	padding: 0 15px;
+	font-size: 14px;
+	font-weight: normal;
+	cursor: pointer;
+	float: left;
+	color: #b76046;
+}
+
+.sellerTable .slList2 .swd2 {
+	left: 22px;
+	top: 68px;
+	width: 150px;
+}
+
+.sellerTable .slList2 .swd3 {
+	left: 22px;
+	top: 92px;
+	width: 78px;
+	color: #bdbdbd;
+}
+
+.sellerTable .slList2 .s4k {
+	width: 138px !important;
+	left: 144px !important;
+}
+
+.sellerTable .slList2 .swd4 {
+	left: 146px;
+	top: 68px;
+	width: 98px;
+	text-align: center;
+}
+
+.sellerTable .slList2 .swd5 {
+	left: 146px;
+	top: 92px;
+	width: 98px;
+	color: #bdbdbd;
+	text-align: center;
+}
+
+.sellerTable .slList2 .s6k {
+	width: 120px !important;
+	left: 286px !important;
+}
+
+.sellerTable .slList2 .swd6 {
+	left: 244px;
+	top: 68px;
+	width: 120px;
+	text-align: center;
+}
+
+.sellerTable .slList2 .swd7 {
+	left: 244px;
+	top: 92px;
+	width: 120px;
+	color: #bdbdbd;
+	text-align: center;
+}
+
+.sellerTable .slList2 .s8k {
+	width: 138px !important;
+	left:406px !important;
+}
+
+.sellerTable .slList2 .swd8 {
+	left: 360px;
+	top: 68px;
+	width: 98px;
+	text-align: center;
+}
+
+.sellerTable .slList2 .swd9 {
+	left: 360px;
+	top: 92px;
+	width: 98px;
+	color: #bdbdbd;
+	text-align: center;
+}
+
+.sellerTable .slList2 .swd10 {
+	left: 460px;
+	top: 68px;
+	width: 108px;
+	text-align: center;
+}
+
+.sellerTable .slList2 .swd11 {
+	left: 460px;
+	top: 92px;
+	width: 108px;
+	color: #bdbdbd;
+	text-align: center;
+}
+
+.sellerTable .slList2 .swd12 {
+	top: 10px;
+	color: #ff2626;
+	right: 20px;
+	width: 150px;
+	text-align: center;
+}
+
+.sellerTable .slList2 .swd12 img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.sellerTable .slList2 .swd13 {
+	top: 51px;
+	color: #ff172e;
+	right: 7px;
+	width: 243px;
+	font-size: 12px;
+	text-align: left;
+}
+
+.sellerTable .slList2 .swd14 {
+	top: 20px;
+	right: 96px;
+	width: 74px;
+	height: 74px;
+}
+
+.sellerTable .slList2 .swd14 img {
+	width: 100%;
+}
+
+.sellerTable .slList2 .slbt1 {
+	position: absolute;
+	left: 624px;
+	top: 74px;
+	width: 100px;
+	height: 24px;
+	border: 1px solid #edaa53;
+	border-radius: 3px;
+	color: #edaa53;
+	background-color: #fff5e9;
+	cursor: pointer;
+}
+
+.sellerTable .slList2 .slbt2 {
+	position: absolute;
+	left: 746px;
+	top: 74px;
+	width: 100px;
+	height: 24px;
+	border: 1px solid #aa3c16;
+	border-radius: 3px;
+	background-color: #aa3c16;
+	color: #fff;
+	cursor: pointer;
+}
+
+.sellerTable .slList2 .slbt4 {
+	position: absolute;
+	left: 746px;
+	top: 86px;
+	width: 100px;
+	height: 12px;
+	color: #aa3c16;
+	text-decoration: underline;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.sellerTable .slList3 {
+	border: 1px solid #d49d8a;
+	border-top: none;
+	min-height: 44px;
+}
+
+.sellerTable .slList3 span {
+	margin-left: 22px;
+	margin-right: 5px;
+	line-height: 44px;
+	font-size: 14px;
+}
+
+.sellerTip {
+	border: 1px solid #fae5cb !important;
+	background-color: #fff5e9 !important;
+	color: #edaa53 !important;
+}
+
+.sellerTip a {
+	color: #aa3c16;
+}
+
+.sellerTip i {
+	background: url(../images/account/se-close.png) no-repeat !important;
+}
+
+.mmHNav .slBt {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	line-height: 34px;
+	border: 1px solid #aa3c16;
+	border-radius: 3px;
+	padding: 0 15px;
+	background-color: #fff;
+	text-align: center;
+	font-size: 16px;
+	color: #aa3c16;
+}
+
+.mmHNav li {
+	position: relative;
+}
+
+.mmHNav li span {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+	color: #f0dcd8;
+	right: 5px;
+	top: 5px;
+	background-image: url(../images/account/zpicon6.png);
+}
+
+.mmHNav li b {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+	color: #f0dcd8;
+	right: 5px;
+	top: 5px;
+	background-image: url(../images/account/zpicon6.png);
+	font-weight: normal;
+}
+
+.mmHNavActive span {
+	background-image: url(../images/account/zpicon5.png) !important;
+	color: #fff !important;
+}
+
+.mmHNavActive b {
+	background-image: url(../images/account/zpicon5.png) !important;
+	color: #fff !important;
+}
+
+.slNoDate {
+	text-align: center;
+	font-size: 16px;
+	line-height: 53px;
+	color: #858585;
+	margin: 50px  auto 0 auto;
+	padding-bottom: 50px;
+	width:400px;
+} 
+
+.slNoDate img {
+	display: inline-block;
+	vertical-align: middle;
+	height: 53px;
+	margin-right: 15px;
+}
+
+.h956 {
+	height: 956px !important;
+}
+
+
+/*---------弹框----------*/
+
+.scPop {
+	width: 460px;
+	padding-top: 80px;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.scPop .wpbl-label {
+	font-size: 14px !important;
+	width: 120px;
+	text-align: right;
+	margin-left: 0px!important;
+}
+
+.scPop .wpblb-note {
+	text-align: left !important;
+}
+
+.scPop .wpblb-note p {
+	width: 260px;
+	line-height: 22px;
+	margin-top: 5px;
+	color: #2e2e2e;
+}
+
+.scPop .wpblb-note p a {
+	color: #aa3b17;
+}
+
+.scPop .wpblb-input {
+	width: 260px !important;
+	height: 32px !important;
+}
+
+.scPop .wpblb-input input {
+	font-size: 14px !important;
+	line-height: 32px !important;
+	height: 32px !important;
+	width: 240px !important;
+	padding-left: 0px !important;
+}
+
+.scPop .wpblb-input .succIconBig {
+	top: 5px !important;
+	width: 18px !important;
+	height: 18px !important;
+	background: url(../images/account/zpicon1.png) no-repeat;
+}
+
+.scPop .wpblb-input .wpblbi-get {
+	height: 34px !important;
+	line-height: 34px !important;
+	font-size: 12px !important;
+}
+
+.wpblb-input-red {
+	border: 1px solid #f23d3d !important;
+}
+
+.scPop h2 {
+	text-align: center;
+	font-size: 14px;
+	padding: 40px 0;
+	color: #2e2e2e;
+}
+
+.scPop .errorPop {
+	height: 48px;
+	line-height: 48px;
+	width: 342px;
+	border: 5px solid #d6d6d6;
+	top: 50%;
+	margin-top: -24px;
+	left: 50%;
+	margin-left: -166px;
+	z-index: 99999999;
+	text-align: center;
+	font-size: 16px;
+	position: absolute;
+	background-color: #fff;
+}
+
+.scPop .errorPop img {
+	margin-right: 16px;
+}
+
+/*----------我的票据----------*/
+.sellerTable1{
+	width: 876px;
+	margin-left: 43px;
+	margin-top: 20px;
+}
+
+.sellerTable1 li {
+	position: relative;
+	width: 874px;
+	height: 64px;
+	border: 1px solid #d49d8a;
+	position: relative;
+	margin-top: 10px;
+}
+.sellerTable1 li span {
+	position: absolute;
+}
+.sellerTable1 li span.pj1{
+	left: 14px;
+	top: 23px;
+	line-height: 16px;
+	width: 110px;
+	height: 16px;
+	color: #2e2e2e;
+}
+.sellerTable1 li span.pj1 b{
+	font-weight: normal;
+	margin-left: 12px;
+}
+.sellerTable1 li span.pj2{
+	left: 124px;
+	top: 20px;
+	display: block;
+	height: 22px;
+	border-radius: 3px;
+	border: 1px solid #d49d8a;
+	text-align: center;
+	line-height: 22px;
+	padding: 0 15px;
+	font-size: 14px;
+	font-weight: normal;
+	cursor: pointer;
+	color: #b76046;
+}
+.sellerTable1 li span.pj3{
+	left: 236px;
+	height: 28px;
+	background-color: #dbdbdb;
+	top: 20px;
+	line-height: 16px;
+	width: 1px;
+	color: #2e2e2e;
+}
+
+.sellerTable1 li span.pj4{
+	position: absolute;
+	left: 274px;
+	top:19px;
+	width: 100px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	border: 1px solid #edaa53;
+	border-radius: 3px;
+	color: #edaa53;
+	background-color: #fff5e9;
+	cursor: pointer;
+	text-align: center;
+}
+.sellerTable1 li span.pj5{
+	left: 398px;
+	top: 23px;
+	line-height: 16px;
+	font-size: 14px;
+	width: 200px;
+	height: 16px;
+	color: #2e2e2e;
+}
+.sellerTable1 li span.pj6{
+	left: 638px;
+	top: 23px;
+	line-height: 16px;
+	font-size: 14px;
+	width: 300px;
+	height: 16px;
+	color: #2e2e2e;
+}
+/*----------我要收票----------*/
+
+.invoiceList {
+	background-color: white;
+	width: 100%;
+}
+
+.invoiceList ul {
+	border-top: 3px solid #aa3c16;
+	padding-bottom: 20px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.invoiceList li {
+	display: block;
+	line-height: 22px;
+	font-size: 14px;
+	float: left;
+	margin-top: 17px;
+	padding-bottom: 17px;
+	width: 1200px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.invoiceList li:last-child {
+	border-bottom: none !important;
+}
+
+.invoiceList .condition{
+	width: 1099px;
+	margin-left: 99px;
+	height: auto;
+}
+
+.invoiceList span {
+	float: left;
+	width: 100px;
+	line-height: 26px;
+	height: 26px;
+	color: #666666;
+}
+
+.invoiceList a {
+	float: left;
+	height: 24px;
+	color: #666666;
+	line-height: 24px;
+	margin: 2px 14px;
+	padding: 0 16px;
+	text-align: center;
+}
+
+.invoiceList a:hover {
+	color: #aa3c16;
+}
+
+.invoiceList .active {
+	color: #fff;
+	background-color: #aa3c16;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.invoiceList .active:hover {
+	color: #fff;
+}
+
+
+/* 切换按钮  */
+
+.invoiceMenu {
+	width: 1200px;
+	height: 36px;
+	margin: 20px auto 0 auto;
+	font-size: 14px;
+	line-height: 36px;
+	background-repeat: repeat-x;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.invoiceMenu .hover {
+	color: #fff;
+	height: 36px;
+	background-color: #aa3c16;
+}
+
+.invoiceMenu .hover:hover {
+	color: #fff;
+}
+
+.invoiceMenu li {
+	width: 156px;
+	text-align: center;
+	float: left;
+	height: 36x;
+	color: #808080;
+	cursor: pointer;
+}
+
+.invoiceMenu li:hover {
+	color: #aa3c16;
+}
+
+.invoiceMenu li span {
+	color: #fd5903;
+}
+
+.invoiceProList {
+	width: 1200px;
+	margin: 20px auto;
+}
+
+.invoiceProList li {
+	width: 1192px;
+	border-left: 6px solid #edaa53;
+	border-radius: 6px;
+	height: 142px;
+	background-color: #fff;
+	position: relative;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.invoiceProList li:hover {
+	border: 1px solid #edaa53;
+	border-left: 6px solid #edaa53;
+	-webkit-box-shadow: 0px 2px 2px #ccc;
+	box-shadow: 0px 2px 2px #ccc;
+}
+
+.invoiceProList li span {
+	position: absolute;
+	color: #2e2e2e;
+}
+
+.invoiceProList li span.inwd1 {
+	font-size: 18px;
+	line-height: 18px;
+	color: #2e2e2e;
+	left: 20px;
+	top: 18px;
+	width: 500px;
+}
+
+.invoiceProList li span.inwd2 {
+	font-size: 12px;
+	line-height: 18px;
+	color: #edaa53;
+	left: 20px;
+	top: 42px;
+	width: 180px;
+	background-image: url(../images/zpicon10.png);
+	background-position: 0px 2px;
+	background-repeat: no-repeat;
+	padding-left: 22px;
+}
+
+.invoiceProList li span.inwd2_1 {
+	font-size: 12px;
+	line-height: 18px;
+	color: #858585;
+	left: 218px;
+	top: 42px;
+	width: 200px;
+	background-image: url(../images/zpicon9.png);
+	background-position: 0px 2px;
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+.invoiceProList li span.inwd3 {
+	font-size: 16px;
+	line-height: 16px;
+	left: 5px;
+	top: 82px;
+	width: 120px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.invoiceProList li span.inwd4 {
+	font-size: 12px;
+	line-height: 12px;
+	left: 5px;
+	top: 106px;
+	width: 120px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-align: center;
+	color: #858585;
+}
+
+.invoiceProList li span.inwd5 {
+	font-size: 16px;
+	line-height: 16px;
+	left: 150px;
+	top: 82px;
+	width: 120px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.invoiceProList li span.inwd6 {
+	font-size: 12px;
+	line-height: 12px;
+	left: 150px;
+	top: 106px;
+	width: 120px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-align: center;
+	color: #858585;
+}
+
+.invoiceProList li span.inwd7 {
+	font-size: 16px;
+	line-height: 16px;
+	left: 350px;
+	top: 82px;
+	width: 120px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.invoiceProList li span.inwd8 {
+	font-size: 12px;
+	line-height: 12px;
+	left: 350px;
+	top: 106px;
+	width: 120px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-align: center;
+	color: #858585;
+}
+
+.invoiceProList li span.inwd9 {
+	font-size: 16px;
+	line-height: 16px;
+	left: 550px;
+	top: 82px;
+	width: 120px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.invoiceProList li span.inwd10 {
+	font-size: 12px;
+	line-height: 12px;
+	left: 560px;
+	top: 106px;
+	width: 120px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-align: center;
+	color: #858585;
+}
+
+.invoiceProList li span.inwd11 {
+	height: 120px;
+	width: 1px;
+	background-color: #e5e5e5;
+	left: 774px;
+	top: 12px
+}
+
+.invoiceProList li span.inwd12 {
+	font-size: 16px;
+	line-height: 16px;
+	left: 800px;
+	top: 16px;
+	width: 120px;
+	color: #edaa53;
+}
+
+.invoiceProList li span.inwd12_1 {
+	height: 1px;
+	font-size: 0;
+	line-height: 0;
+	width: 362px;
+	background-color: #e5e5e5;
+	right: 30px;
+	top: 40px
+}
+
+.invoiceProList li span.inwd13 {
+	font-size: 12px;
+	line-height: 16px;
+	height: 16px;
+	left: 800px;
+	top: 78px;
+	width: 120px;
+	color: #858585;
+	background-image: url(../images/zpicon11.png);
+	background-position: 0px -1px;
+	background-repeat: no-repeat;
+	padding-left: 22px;
+}
+
+.invoiceProList li span.inwd13 b {
+	width: 62px;
+	height: 9px;
+	line-height: 9px;
+	display: block;
+	background-image: url(../images/x3.png);
+	background-repeat: no-repeat;
+}
+
+.invoiceProList li span.inwd13 b i {
+	display: block;
+	height: 9px;
+	background-image: url(../images/x3_1.png);
+	background-repeat: no-repeat;
+}
+
+.invoiceProList li span.inwd14 {
+	font-size: 12px;
+	line-height: 16px;
+	left: 800px;
+	top: 102px;
+	width: 120px;
+	color: #858585;
+	background-image: url(../images/zpicon12.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	padding-left: 22px;
+}
+
+.invoiceProList li input {
+	width: 136px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+	background-color: #edaa53;
+	top: 72px;
+	right: 30px;
+	position: absolute;
+	border: none;
+	cursor: pointer;
 }

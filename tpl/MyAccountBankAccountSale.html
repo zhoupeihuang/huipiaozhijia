@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
 		<link rel="stylesheet" type="text/css" href="css/zp.css"/>
 		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		<link rel="stylesheet" type="text/css" href="css/showBo.css"/>		
 
 		<!--[if (gte IE 6)&(lte IE 8)]>
      	  <script type="text/javascript" src="js/selectivizr.js"></script>
@@ -31,7 +32,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="bgf7">
+	<body class="mainbgs">
 		@@include("../src/navhead.html") 
 		@@include("../src/header.html") 
 		<!--内部内容-->
@@ -51,11 +52,7 @@
 						<div class="BankAccountAddBox">
 							<div class="baab-icon"></div>
 							<div class="baab-text">添加卖方银行账户</div>
-						</div>
-						<div class="BankAccountAddBox">
-							<div class="baab-icon"></div>
-							<div class="baab-text">添加卖方银行账户</div>
-						</div>						
+						</div>					
 					</div>
 					<div class="BankAccountList mb30">
 						<table>
@@ -69,12 +66,48 @@
 									<th>添加时间</th>
 									<th>操作</th>									
 								</tr>
-						
+								<tr>
+									<td>XXX公司</td>
+									<td>XXX公司</td>
+									<td>1234****998</td>
+									<td>1111****111</td>
+									<td>审核通过</td>
+									<td>2017-05-04</td>	
+									<td class="bal-text-right"><a class="bal-detail">详细</a></td>
+								</tr>
+								<tr class="bal-buttons">
+									<td colspan="4" class="col-left"><div class="white-padding"></div><b class="bal-jt bal-jt-on"></b>默认账户</td>
+									<td colspan="3" class="col-right"><a class="bal-delete">删除</a></td>
+								</tr>
+								<tr>
+									<td>XXX公司</td>
+									<td>XXX公司</td>
+									<td>1234****998</td>
+									<td>1111****111</td>
+									<td class="bal-red">待审核</td>
+									<td>2017-05-04</td>	
+									<td class="bal-text-right"><a class="bal-detail">详细</a></td>
+								</tr>	
+								<tr class="bal-buttons">
+									<td colspan="4" class="col-left"><div class="white-padding"></div><b class="bal-jt"></b>默认账户</td>
+									<td colspan="3" class="col-right"><a class="bal-delete">删除</a></td>
+								</tr>								
 						</table>
 					</div>
 				</div>
 			</div>
 		</section>
+		<script type="text/javascript">
+		$(function(){
+			$(".BankAccountTip i").click(function(){
+				$(this).parent().hide();	
+			});	
+			$(".bal-jt").click(function(){
+				$(this).toggleClass("bal-jt-on");
+			});
+		});
+
+		</script>		
 		<!--内部内容-->
 		@@include("../src/footer.html") 
 	</body>

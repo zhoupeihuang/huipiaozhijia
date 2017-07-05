@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/quotation.css"/>	
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="bgf7">
+		<nav id="navhead">
+	<div class="navhead ">
+		<div class="mainbox ">
+			<div class="leftnavhead">客服电话：400-6609-655&nbsp;&nbsp;&nbsp;&nbsp;交易时间：上午8:00 - 下午16:30（工作日）</div>
+			<div class="rightnavhead">
+				<ul>
+					<li>
+						<a href="">新手指引</a>
+					</li>
+					<li>
+						<a href="securityCenter.html">安全保障</a>
+					</li>
+					<li>
+						<a href="HelpCenter.html">帮助中心</a>
+					</li>
+					<li>
+						<a href="login.html">登录</a>
+					</li>
+					<li>
+						<a href="registera.html">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav> 
+		<header id="header">
+	<div class="headBox">
+		<div class="mainbox cf">
+			<div class="leftHeadBox ">
+				<img src="images/logo.png" />
+			</div>
+			<div class="rightHeadBox">
+				<ul>
+					<li >
+						<a href="index.html" class="rightHBActive">首页</a>
+					</li>
+					<li>
+						<a href="sellerPublish.html">我要贴现</a>
+					</li>
+					<li>
+						<a href="invoiceList.html">我要收票</a>
+					</li>
+					<li>
+						<a href="#">票据资讯</a>
+					</li>
+					<li class="rightHBeji">
+						<a href="MyAccount.html" class="userIcon ">
+							我的账户
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+	$(function(){
+		$(".rightHeadBox ul li").hover(function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+			$(this).children("a").addClass("rightHBhover");
+		},function(){
+			$(".rightHeadBox ul li a").removeClass("rightHBhover")
+		})
+	})
+</script> 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="quotationTopHeader mt20">
+				<div class="quotationTopHeaderInner">
+					<div class="qthi-text">
+						<div class="qthit-title">
+							<span></span>
+							中国农业银行广西柳州市立新支行营业室 1000000元 2017-11-12到期
+						</div>
+						<div class="qthit-piaomian">
+							<table>
+								<tr>
+									<th>承兑方全称</th>
+									<th>票面金额</th>
+									<th>汇票到期日</th>									
+								</tr>
+								<tr>
+									<td>中国农业银行广西柳州市立新支行营业室</td>									
+									<td class="qthit-red">1,000,000元</td>
+									<td>2017-11-12</td>
+								</tr>
+							</table>
+						</div>
+						<div class="qthit-text">
+							<table>
+								<tr>
+									<th>票据类型 :</th>
+									<td>银电</td>
+									<th>承兑方类型:</th>
+									<td>无</td>
+								</tr>
+								<tr>
+									<th>期望成交价 :</th>
+									<td>面议</td>
+									<th>票据所在地:</th>
+									<td>江西-萍乡</td>
+								</tr>
+								<tr>
+									<th>剩余天数 :</th>
+									<td>172天</td>
+									<th>创建时间:</th>
+									<td>2017-05-24  14 : 52 : 57</td>
+								</tr>
+								<tr>
+									<th>卖方备注 :</th>
+									<td>无备注</td>
+									<th></th>
+									<td></td>
+								</tr>								
+							</table>
+						</div>
+					</div>
+					<div class="qthi-form">
+						<div class="qthif-top">
+							<div class="qthift-title">询价中</div>
+							<div class="qthift-numbers">
+								<span class="qthiftn-institution"></span>1家机构报价
+								<span class="qthiftn-stars"><b><i style="width:50%"></i></b></span>
+							</div>
+						</div>
+						<div class="qthif-body" style="display: block;">
+							<div class="qthifb-label">金额报价</div>
+							<div class="qthifb-input">
+								<input type="text" value="8000" placeholder="请输入购买该票据您愿意支付的金额"/>
+								<span>元</span>
+							</div>
+							<div class="qthifb-label">利率报价</div>
+							<div class="qthifb-input">								
+								<input type="text" value="99.75" placeholder="请输入利率"/>
+								<span>‰</span>								
+							</div>	
+							<div class="qthifb-pay">
+								<div class="qthifbp-amount">实需支付金额<i>8000</i>元</div>
+								<div class="qthifbp-fee">(含<span>0</span>元手续费) <a>收费规则</a></div>
+							</div>	
+							<div class="qthifb-payed-time">
+								您已在2017-05-04对该汇票报过价
+							</div>							
+							<input class="qthifb-confirm-button confirmGray" type="button" value="确定" />							
+						</div>							
+						<div class="qthif-body" style="display: none;">
+							<div class="qthifb-label">金额报价</div>
+							<div class="qthifb-input">
+								<input type="text" value="8000" placeholder="请输入购买该票据您愿意支付的金额"/>
+								<span>元</span>
+							</div>
+							<div class="qthifb-label">利率报价</div>
+							<div class="qthifb-input">								
+								<input type="text" value="99.75" placeholder="请输入利率"/>
+								<span>‰</span>								
+							</div>	
+							<div class="qthifb-pay">
+								<div class="qthifbp-amount">实需支付金额<i>8000</i>元</div>
+								<div class="qthifbp-fee">(含<span>0</span>元手续费) <a>收费规则</a></div>
+							</div>	
+							<input class="qthifb-confirm-button" type="button" value="确定" />							
+						</div>							
+						<div class="qthif-body" style="display: none;">
+							<div class="qthifb-label">金额报价</div>
+							<div class="qthifb-input">
+								<input type="text" placeholder="请输入购买该票据您愿意支付的金额"/>
+								<span>元</span>
+							</div>
+							<div class="qthifb-label">利率报价</div>
+							<div class="qthifb-input">								
+								<input type="text" placeholder="请输入利率"/>
+								<span>‰</span>								
+							</div>	
+							<div class="qthifb-pay">
+								<div class="qthifbp-amount">实需支付金额<i>0</i>元</div>
+								<div class="qthifbp-fee">(含<span>0</span>元手续费) <a>收费规则</a></div>
+							</div>	
+							<input class="qthifb-now-button" type="button" value="立即报价" />							
+						</div>							
+						<div class="qthif-body" style="display: none;">
+							<div class="qthifb-modify-items">
+								<div class="qthifbmi-amout">金额报价 : 8000元</div>
+								<div class="qthifbmi-percent">利率报价 : 99.75%</div>
+							</div>
+							<div class="qthifb-pay">
+								<div class="qthifbp-amount">实需支付金额<i>8000</i>元</div>
+								<div class="qthifbp-fee">(含<span>0</span>元手续费) <a>收费规则</a></div>
+							</div>
+							<div class="qthifb-payed-time">
+								您已在2017-05-04对该汇票报过价
+							</div>
+							<input class="qthifb-modify-button" type="button" value="修改报价" />
+						</div>							
+						<div class="qthif-body" style="display: none;">
+							<div class="qthifb-kaitong-desc">您必须开通买方在线交易权限才能对该 票据进行报价</div>
+							<a class="qthifb-kaitong">马上开通</a>
+						</div>						
+						<div class="qthif-body" style="display: none;">
+							<div class="qthifb-login-desc">您必须登录才可以进行报价</div>
+							<a class="qthifb-login">立即登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="quotationBoxs cf">
+				<div class="quotationBox quotationBoxImage">
+					<div class="quotationBoxTitle">票面图片</div>
+					<div class="quotationBoxBody">
+						<div class="quotationBoxBodyTitle">
+							<span>汇票正面</span>
+						</div>
+					<!--	<img class="quotationBoxBodyImg" src="images/quotation/no-pic.jpg"/>-->
+						<img class="quotationBoxBodyImg" src="images/quotation/no-pic-login.jpg"/>						
+					</div>					
+				</div>
+				<div class="quotationBox quotationBoxTable">
+					<div class="quotationBoxTitle">相关票据</div>
+					<div class="quotationBoxBody">
+						<table>
+							<tr>
+								<th>类型</th>
+								<th>金额</th>
+								<th>汇票到期日</th>
+								<th>操作</th>								
+							</tr>
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>	
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>
+							<tr>
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>	
+							<tr class="no-border">
+								<td>无 银电</td>
+								<td>100.00万元</td>
+								<td>2017-11-12</td>
+								<td><a>查看</a></td>								
+							</tr>									
+						</table>
+					</div>					
+				</div>				
+			</div>
+		</section>
+		<div class="boxmask" style="display: none;"></div>
+		<div class="boxSuccess" style="display: none;">
+			<span class="boxSuccessIcon"></span>
+			<span class="boxSuccessText">报价成功</span>
+		</div>	
+		<div class="boxError" style="display: none;">
+			<span class="boxErrorIcon"></span>
+			<span class="boxErrorText">报价金额不能大于票面金额</span>
+		</div>	
+		<script type="text/javascript">
+			function boxSuccess(){
+				$(".boxmask").show();
+				$(".boxSuccess").show();
+			}
+			function boxError(str){
+				$(".boxmask").show();
+				$(".boxError").show();
+				$(".boxErrorText").html(str);
+			}
+			$(function(){
+				//boxSuccess();
+				//boxError("报价金额不能大于票面金额!");
+				$(".boxmask,.boxSuccess,.boxError").click(function(){
+					$(".boxmask").hide();
+					$(".boxSuccess").hide();
+					$(".boxError").hide();
+				});
+				$(".qthifb-now-button").click(function(){
+					boxSuccess();
+				});
+			});
+		</script>
+		<!--内部内容-->		
+		<footer id="footer">
+<div class="footerBoxOuter">	
+	<div class="footerBox cf">
+			<div class="footerWebsiteMap">
+				<div class="fbo2-renzhen cf">
+					<a></a>	<a></a>	<a></a>	<a></a>	<a></a>	
+				</div>		
+				<ul class="cf">
+					<li>
+						<div class="fwmTitle">
+							<a>公司简介</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>新手指引</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>安全保障</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>帮助中心</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>加入我们</a>
+						</div>
+					</li>
+					<li>
+						<div class="fwmTitle">
+							<a>联系我们</a>
+						</div>
+					</li>					
+				</ul>
+			</div>
+			<div class="footerCustomService">
+				<div class="fcst-time">交易时间：上午8:00 - 下午16:30（工作日）</div>				
+				<div class="fcst-phone">400-825-8800</div>
+				<div class="fcst-time">汇票之家微信公众号：汇票之家</div>
+			</div>
+	</div>
+</div>
+<div class="footerBoxOuter2">	
+	<div class="footerBox">			
+		<div class="copyright">© 2017 小财迷 91xcm.com 版权所有. 上海问财互联网金融信息服务有限公司. 沪ICP备16002215号.理财有风险 投资需谨慎 	</div>
+	</div>
+</div>		
+</footer> 
+	</body>
+
+</html>

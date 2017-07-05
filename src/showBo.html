@@ -1,0 +1,28 @@
+<!--弹出层的样式以及JS-->
+		<link rel="stylesheet" href="css/showBo.css" />
+		<script src="js/showBo.js" type="text/javascript" charset="utf-8"></script>
+		<!--弹出层的样式以及JS-->
+<span id="dd">点击</span>
+<script type="text/javascript">
+			$(function() {
+				//弹出层的JS
+				$("#dd").click(function() {
+					//第一个是文本 第二个是标题，标题可以为空,第三个是按钮，空就是没有，
+					var dd = 1;
+					if(dd) {
+						Showbo.Msg.confirm('请先进行身份验证！', '消息提示', '同意', '取消', function(flag) {
+							
+							if(flag == 'yes') {
+								window.location.href = "同意";
+								//取消
+							} else if(flag == 'no') {
+								//确定
+							}
+						});
+					} else {
+						Showbo.Msg.alert('转入成功 !', '');
+					}
+				})
+
+			});
+		</script>

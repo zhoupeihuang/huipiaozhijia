@@ -12,14 +12,14 @@ var gulp = require('gulp'),
  * 暂不启用
  * */
 gulp.task('testCssmin', function() {
-	gulp.src('src/css/*.css')
+	gulp.src('css/*.css')
 		.pipe(cssmin())
-		.pipe(gulp.dest('src/css1'));
+		.pipe(gulp.dest('./css'));
 });
 gulp.task('jsmin', function() {
-	gulp.src('src/js/*.js')
+	gulp.src('js/*.js')
 		.pipe(uglify())
-		.pipe(gulp.dest('src/js2'));
+		.pipe(gulp.dest('./js'));
 });
 gulp.task('testHtmlmin', function() {
 	var options = {
@@ -38,7 +38,7 @@ gulp.task('testHtmlmin', function() {
 });
 //自动前缀
 gulp.task('testAutoFx', function() {
-	gulp.src('src/css/index.css')
+	gulp.src('css/*.css')
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions', 'Android >= 4.0'],
 			cascade: true, //是否美化属性值 默认：true 像这样：
@@ -46,7 +46,7 @@ gulp.task('testAutoFx', function() {
 			//        transform: rotate(45deg);
 			remove: true //是否去掉不必要的前缀 默认：true 
 		}))
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('./css'));
 });
 //图片压缩
 gulp.task("testImagemin", function() {
@@ -57,7 +57,7 @@ gulp.task("testImagemin", function() {
 			interlaced: true,
 			multipass: true
 		}))
-		.pipe(gulp.dest("src/images"));
+		.pipe(gulp.dest("./images"));
 });
 //less
 gulp.task("testLess", function() {
@@ -78,6 +78,7 @@ gulp.task('fileinclude', function() {
 
 //watch 模式
 gulp.task('watch',function(){
+	gulp.watch("./css/*.css",['testLess']);
     gulp.watch("./css/less/*.less",['testLess']);
     gulp.watch('./src/*.html',['fileinclude']);
     gulp.watch('./tpl/*.html',['fileinclude']);
@@ -85,4 +86,4 @@ gulp.task('watch',function(){
 
 
 //gulp.task("default",['testCssmin','jsmin','testHtmlmin','testAutoFx','testImagemin','testLess','fileinclude']);
-gulp.task('default', ['fileinclude','testLess']);
+gulp.task('default', ['fileinclude','testLess','testImagemin','testAutoFx']);

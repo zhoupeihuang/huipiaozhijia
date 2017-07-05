@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ZP.css"/>
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+		<!--弹出层的样式以及JS-->
+		<link rel="stylesheet" href="css/showBo.css" />
+		<script src="js/showBo.js" type="text/javascript" charset="utf-8"></script>
+		<!--弹出层的样式以及JS-->    
+	</head>
+
+	<body class="mainbgs">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox cf mt20 mb20">
+				@@include("../src/myAccountLeftNav.html")
+				<div class="rightContent">
+					<div class="atitle cf">
+						<div class="atitle-text">我是买方</div>
+					</div>
+					<div class="bsBody">
+					<div class="baseTit">
+						我的电票交易订单
+					</div>
+					<ul class="sellerNav">
+						<li class="slActive">
+							<div>全部</div>
+						</li>
+						<li>
+							<div>待付款<span>1</span></div>
+						</li>
+						<li>
+							<div>待背书<span>1</span></div>
+						</li>
+						<li>
+							<div>待签收<span>1</span></div>
+						</li>
+						<li>
+							<div>风控中<span>1</span></div>
+						</li>
+						<li>
+							<div>交易成功<span>1</span></div>
+						</li>
+						<li>
+							<div>交易失败</div>
+						</li>
+					</ul>
+					<ul class="sellerTable">
+						<li class="slList1"><span>交易订单号 ：1201704262915</span><span>创建时间 ：2017-04-26  14:23:02</span><b>操作人：liyu111222(李煜)</b></li>
+						<li class="slList2">
+							<span class="swd1">
+								<em>重庆农村商业银行股份有限公司江北支行</em><b>待付款</b>
+							</span>
+							<span class="swd2">
+								银电 无
+							</span>
+							<span class="swd3">
+								票据类型
+							</span>
+							<span class="swd4">
+								300000元
+							</span>
+							<span class="swd5">
+								票据金额
+							</span>
+							<span class="swd6">2017-07-24</span>
+							<span class="swd7">汇票到期日</span>
+							<span class="swd8">
+								89天
+							</span>
+							<span class="swd9">剩余期限</span>
+							<span class="swd10">5家</span>
+							<span class="swd11">机构报价数</span>
+							<input type="button" value="查看票据详情" class="slbt1" />
+							<input type="button" value="确认付款" class="slbt2"/>
+						</li>
+						<li class="slList3">
+							<span>报价金额 ：280000 元 (约合利率 ：22.47%)</span>
+							<span>实需支付金额 ：280000元 (含 0元手续费)</span>
+							<span>报价时间 ：2017-05-05 14:52:56</span>
+						</li>
+					</ul>
+					<ul class="sellerTable">
+						<li class="slList1"><span>交易订单号 ：1201704262915</span><span>创建时间 ：2017-04-26  14:23:02</span><b>操作人：liyu111222(李煜)</b></li>
+						<li class="slList2">
+							<span class="swd1">
+								<em>重庆农村商业银行股份有限公司江北支行</em><b>待签收</b>
+							</span>
+							<span class="swd2">
+								银电 无
+							</span>
+							<span class="swd3">
+								票据类型
+							</span>
+						    <span class="swd4">
+								300000元
+							</span>
+							<span class="swd5">
+								票据金额
+							</span>
+							<span class="swd6">2017-07-24</span>
+							<span class="swd7">汇票到期日</span>
+							<span class="swd8">
+								89天
+							</span>
+							<span class="swd9">剩余期限</span>
+							<span class="swd10">5家</span>
+							<span class="swd11">机构报价数</span>
+							<span class="swd12"><img src="images/account/zpicon8.png"/>签收倒计时 29:36</span>
+							<input type="button" value="查看票据详情" class="slbt1" />
+							<input type="button" value="确认签收" id="srmm" class="slbt2"/>
+						</li>
+						<li class="slList3">
+							<span>报价金额 ：280000 元 (约合利率 ：22.47%)</span>
+							<span>实需支付金额 ：280000元 (含 0元手续费)</span>
+							<span>报价时间 ：2017-05-05 14:52:56</span>
+						</li>
+					</ul>
+					<ul class="sellerTable">
+						<li class="slList1"><span>交易订单号 ：1201704262915</span><span>创建时间 ：2017-04-26  14:23:02</span><b>操作人：liyu111222(李煜)</b></li>
+						<li class="slList2">
+							<span class="swd1">
+								<em>重庆农村商业银行股份有限公司江北支行</em><b>风控中</b>
+							</span>
+							<span class="swd2">
+								银电 无
+							</span>
+							<span class="swd3">
+								票据类型
+							</span>
+							<span class="swd4">
+								300000元
+							</span>
+							<span class="swd5">
+								票据金额
+							</span>
+							<span class="swd6">2017-07-24</span>
+							<span class="swd7">汇票到期日</span>
+							<span class="swd8">
+								89天
+							</span>
+							<span class="swd9">剩余期限</span>
+							<span class="swd10">5家</span>
+							<span class="swd11">机构报价数</span>
+							<input type="button" value="查看票据详情" class="slbt1" />
+							<input type="button" value="确认交易完成" class="slbt2"/>
+						</li>
+						<li class="slList3">
+							<span>报价金额 ：280000 元 (约合利率 ：22.47%)</span>
+							<span>实需支付金额 ：280000元 (含 0元手续费)</span>
+							<span>报价时间 ：2017-05-05 14:52:56</span>
+						</li>
+					</ul>
+				</div>
+				@@include("../src/paging.html") 
+				</div>
+			</div>
+		</section>
+    <script>  
+
+                $("body").delegate("#pwd-input","input",function() {  
+                	var $input = $(".fake-box input");  
+                    var pwd = $(this).val().trim();  
+                    for (var i = 0, len = pwd.length; i < len; i++) {  
+                        $input.eq("" + i + "").val(pwd[i]);  
+                    }  
+                    $input.each(function() {  
+                        var index = $(this).index();  
+                        if (index >= len) {  
+                            $(this).val("");  
+                        }  
+                    });  
+                    if (len == 6) {  
+                        //执行其他操作  
+                    }  
+                });  
+					//弹出层输入密码	
+				$("#srmm").click(function() {
+						//第一个是文本 第二个是标题，标题可以为空,第三个是按钮，空就是没有，第四个是时间
+						Showbo.Msg.alert('<div class="pop-input-password"><div class="pwd-box"><input type="tel" maxlength="6" class="pwd-input" id="pwd-input"><div class="fake-box"><input type="password" readonly=""><input type="password" readonly=""><input type="password" readonly=""><input type="password" readonly=""><input type="password" readonly=""><input type="password" readonly=""></div></div><div class="popForgotPassword"><a>忘记密码?</a></div><div class="wpblb-note pop-password-note"><i class="failIcon"></i>输入的密码不正确！</div></div>', '输入交易密码', '确定', 1e5);
+
+				});               
+    </script>  		
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+
+</html>

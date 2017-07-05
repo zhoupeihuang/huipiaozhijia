@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/GE.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/MF.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zp.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+
+		<!--[if (gte IE 6)&(lte IE 8)]>
+     	  <script type="text/javascript" src="js/selectivizr.js"></script>
+     	  <script type="text/javascript" src="js/pie.js"></script>
+     	  <script>
+     	  	$(function() {
+     	  		if(window.PIE) {
+     	  			 $('.productBigBox').each(function() {
+			            PIE.attach(this);
+			        });
+			        $('.productLittleBox').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+     	  </script>
+		<![endif]-->
+	</head>
+
+	<body class="mainbgs">
+		@@include("../src/navhead.html") 
+		@@include("../src/header.html") 
+		<!--内部内容-->
+		<section id="maxBox">
+			<div class="mainbox mt20 mb20 cf">
+				@@include("../src/myAccountLeftNav.html") 
+				<div class="rightContent">
+					 <div class="BankAccountTab cf">
+						<a class="bat-active">卖方银行账户</a>
+						<a>买方银行账户</a>
+					 </div>
+					<div class="BankAccountTip cf">
+						友情提示：该账户必须是卖方进行背书的银行账户，同时用于交易成功后接收买方的付款。
+						<i></i>
+					</div>
+					<div class="sellerBankForm">
+						<div class="sbf-line cf">
+							<div class="sbf-label">户名</div>
+								<div class="sbf-body">
+									<div class="sbfb-input sbfb-input-text">
+										XXXX公司
+									</div>
+									<div class="sbfb-note">
+									
+									</div>
+								</div>
+							</div>	
+							<div class="sbf-line cf">
+								<div class="sbf-label">开户行全称</div>
+								<div class="sbf-body">
+									<div class="sbfb-input sbfb-input-border">
+										<input class="sbfbi-text" type="text"  placeholder="请输入开户行全称"/>
+									</div>
+									<div class="sbfb-note-demo">
+										请输入银行开户行全称 ( 具体到支行 )
+									</div>
+									<div class="sbfb-note">
+										<i class="failIcon"></i>开户行全称错误！
+									</div>
+								</div>
+							</div>	
+							<div class="sbf-line cf">
+								<div class="sbf-label">银行账号</div>
+								<div class="sbf-body">
+									<div class="sbfb-input sbfb-input-border">
+										<input class="sbfbi-text" type="text"  placeholder="请输入银行账号"/>
+									</div>
+									<div class="sbfb-note">
+										<i class="failIcon"></i>银行账号错误！
+									</div>
+								</div>
+							</div>	
+							<div class="sbf-line cf">
+								<div class="sbf-label"></div>
+								<div class="sbf-body">
+									<label>
+										<input class="sbf-checkbox" type="checkbox" value=""/>设为默认银行账户
+									</label>
+								</div>
+							</div>		
+							<div class="sbf-tip">请您务必按真实的账户信息准确填写，并确认该账户已开通电子票据权限，否则由此产生的损失将由您自行承担。</div>
+							<div class="sbf-line cf">
+								<div class="sbf-label"></div>
+								<div class="sbf-body">
+									<input class="sbf-button" type="button" value="确定"/>
+								</div>
+							</div>								
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+		$(function(){
+			$(".BankAccountTip i").click(function(){
+				$(this).parent().hide();	
+			});		
+		});
+
+		</script>		
+		<!--内部内容-->
+		@@include("../src/footer.html") 
+	</body>
+
+</html>
